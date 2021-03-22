@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="map_title">地图</string>
+    <string name="map_cache">地图缓存</string>
+    <string name="map_cache_size">大小</string>
+    <string name="map_cache_version">版本</string>
+    <string name="map_cache_is_downloading">下载中</string>
+    <string name="map_cache_cancel">确定取消下载</string>
+    <string name="map_cache_has_download">已下载</string>
+    <string name="map_cache_un_download">未下载</string>
+</resources>

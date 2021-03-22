@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">FusePla</string>
+	<string name="web_power_failure">Blackout application</string>
+	<string name="web_please_bind_viewstub">Please bind viewstub view first</string>
+    <string name="web_map_cache_open_tip">可以在"我的-设置-地图缓存"选项中，下载需要用到的地图包</string>
+</resources>

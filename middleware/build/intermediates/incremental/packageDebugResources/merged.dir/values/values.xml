@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="color"/>
+    <attr format="string" name="hint"/>
+    <attr format="reference" name="icon"/>
+    <attr format="string" name="title"/>
+    <attr format="string" name="value"/>
+    <color name="BgXjAreaBlue">#f0f4fc</color>
+    <color name="EamDegradation">#A9492B</color>
+    <color name="EamForbidden">#FA824D</color>
+    <color name="EamInUse">#2BA966</color>
+    <color name="EamOverdue">#188CC8</color>
+    <color name="EamSealing">#A99C2B</color>
+    <color name="EamaBandonment">#B1B1B1</color>
+    <color name="SBDAListBlue">#2799C9</color>
+    <color name="SBDAListGray">#BCBCBC</color>
+    <color name="SBDAListGreen">#8AD790</color>
+    <color name="SBDAListRed">#E0838E</color>
+    <color name="SBDAListYellow">#DEC76D</color>
+    <color name="bg_deep_grey">#E2E6EA</color>
+    <color name="bg_default">#FEFFFF</color>
+    <color name="bg_light_grey">#f0f0f0</color>
+    <color name="bigRepairBg">#de7718</color>
+    <color name="black_text">#1c2124</color>
+    <color name="blue_background">#ff40b0fa</color>
+    <color name="blue_dodger">#1E90FF</color>
+    <color name="blue_light">#48C7DA</color>
+    <color name="blue_text">#009AFC</color>
+    <color name="c_scan_333">#ff333333</color>
+    <color name="c_scan_666">#666666</color>
+    <color name="c_scan_9">#999999</color>
+    <color name="c_scan_F8">#F8F8F8</color>
+    <color name="c_scan_bt">#1E82D2</color>
+    <color name="c_scan_line">#ffdcdcdc</color>
+    <color name="c_scan_remind">#7D7979</color>
+    <color name="c_scan_round">#58F27A</color>
+    <color name="checkRepairBg">#de7718</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="confuse">#2799C9</color>
+    <color name="contact_text_color">#f8fdfe</color>
+    <color name="cycle_bg_color">#EFF3F9</color>
+    <color name="dark_text">#333333</color>
+    <color name="dark_text99">#999999</color>
+    <color name="deleteBgColor">#E05543</color>
+    <color name="deviceTitleColor">#3c5569</color>
+    <color name="faultInfoBg">#EF8742</color>
+    <color name="gradient_end">#2799c9</color>
+    <color name="gradient_start">#377edf</color>
+    <color name="gray_background">#fff8f8f8</color>
+    <color name="gray_deep">#D1D4DB</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="gray_text">#999798</color>
+    <color name="green_btn">#00C482</color>
+    <color name="grey_filter_bg">#EFEFEF</color>
+    <color name="grey_line">#DCDCDC</color>
+    <color name="light_blue_bg">#57B6FF</color>
+    <color name="light_gray">#EEE</color>
+    <color name="list_bg_color">#F8F8F8</color>
+    <color name="lubricateBg">#9CBF3E</color>
+    <color name="maintenaceBg">#2799C9</color>
+    <color name="normal_gray">#f5f5f5</color>
+    <color name="operate">#E05543</color>
+    <color name="popBgColor">#252525</color>
+    <color name="random_1">#EF8742</color>
+    <color name="random_2">#2799C9</color>
+    <color name="random_3">#9CBF3E</color>
+    <color name="red_light">#FFE8E5</color>
+    <color name="status_blue">#1E82D2</color>
+    <color name="status_green">#87CF76</color>
+    <color name="status_orange">#FF824B</color>
+    <color name="status_other">#626262</color>
+    <color name="tabtSelectColor">#356cbc</color>
+    <color name="textColor5251">#323232</color>
+    <color name="themeColor">#2874d2</color>
+    <color name="themeColor2">#356cbc</color>
+    <color name="titleBgColor">#F6F6F6</color>
+    <color name="titleTextColor">#666666</color>
+    <color name="title_bg">#1e82d2</color>
+    <color name="txl_view_title">#16B1E6</color>
+    <color name="webThemeColor">#2874d2</color>
+    <color name="workSource">#5b7b94</color>
+    <color name="wts_bg_color">#F8F8F8</color>
+    <color name="wts_write_ticket_title">#F9F9F9</color>
+    <color name="xjAreaBlue">#366CBC</color>
+    <color name="xjAreaLineBlue">#c5d3ef</color>
+    <color name="xjStateBg">#F0F4FC</color>
+    <color name="yh_item_bg">#f5f5f5</color>
+    <color name="yhfc_color">#e05543</color>
+    <color name="yhfx_color">#EF8742</color>
+    <color name="yhpg_color">#9CBF3E</color>
+    <color name="yhzg_color">#2799c9</color>
+    <item name="click_remove" type="id"/>
+    <item name="drag_handle" type="id"/>
+    <item name="first" type="id"/>
+    <string name="app_name">FusePla</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar">
+        
+    </style>
+    <style name="AppFadeTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowAnimationStyle">@style/fadeStyle</item>
+
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="LaunchAppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowBackground">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+
+    </style>
+    <style name="SBDASplitLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:layout_marginLeft">@dimen/dp_15</item>
+        <item name="android:layout_marginRight">@dimen/dp_15</item>
+
+    </style>
+    <style name="TabTestStyle">
+        <item name="android:textColor">@color/textColorlightblack</item>
+        <item name="android:textSize">@dimen/fontSize_12sp</item>
+    </style>
+    <style name="TranslucentTheme" parent="AppTheme">
+        
+        <item name="android:windowBackground">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+    <style name="Transparent2" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/fadeStyle</item>
+    </style>
+    <style name="WarpLinearLayoutDefault">
+        <item name="grivate">left</item>
+        <item name="horizontal_Space">20dp</item>
+        <item name="vertical_Space">20dp</item>
+        <item name="isFull">false</item>
+    </style>
+    <style name="common_ptr_frame_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dp_50</item>
+        <item name="android:layout_marginBottom">@dimen/dp_50</item>
+        <item name="ptr_keep_header_when_refresh">true</item>
+        <item name="ptr_pull_to_fresh">false</item>
+        <item name="ptr_ratio_of_header_height_to_refresh">1.2</item>
+        <item name="ptr_resistance">1.7</item>
+    </style>
+    <style name="dialogAnimator">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="dialogstyle" parent="Base.Theme.AppCompat.DialogWhenLarge">
+        
+        <item name="android:windowBackground">@android:color/transparent</item>
+        
+        <item name="android:windowFrame">@null</item>
+        
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        
+        <item name="android:windowIsFloating">true</item>
+        
+        <item name="android:windowIsTranslucent">true</item>
+        
+        <item name="android:windowContentOverlay">@null</item>
+        
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="horizontal_custom_infinite_listView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    <style name="horizontal_custom_list_widget">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="text_size">14</item>
+        <item name="title_bg_color">@color/white</item>
+    </style>
+    <style name="pop_add">
+        <item name="android:windowEnterAnimation">@anim/pop_add_show</item>
+        <item name="android:windowExitAnimation">@anim/pop_add_hide</item>
+    </style>
+    <style name="psc_edit_date_horizontal_style_text_view">
+        <item name="bold">false</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="edit_maxLine">5</item>
+        <item name="text_width">100dp</item>
+        <item name="android:layout_marginBottom">@dimen/dp_1</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="key_width">150dp</item>
+    </style>
+    <style name="ptr_frame_layout_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/dp_50</item>
+        <item name="android:layout_marginBottom">@dimen/dp_50</item>
+        <item name="android:tag">refreshFrameLayout</item>
+        <item name="ptr_pull_to_fresh">false</item>
+        <item name="ptr_keep_header_when_refresh">true</item>
+        <item name="ptr_ratio_of_header_height_to_refresh">1.2</item>
+        <item name="ptr_resistance">1.7</item>
+    </style>
+    <style name="style_button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">33dp</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:background">@color/themeColor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="style_list_item_base">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="style_text_big">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+    <style name="style_text_middle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="style_text_middle_grey">
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="style_text_normal">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="style_text_normal_gray">
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="style_text_small">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="style_text_small_grey">
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="widgetTitleTextStyle">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:paddingStart">@dimen/dp_10</item>
+        <item name="android:textSize">@dimen/fontSize_12sp</item>
+        <item name="android:textColor">@color/textColorlightblack</item>
+        
+        <item name="android:drawableLeft">@drawable/sh_title_tag</item>
+        <item name="android:drawablePadding">@dimen/dp_5</item>
+    </style>
+    <declare-styleable name="CustomDownloadText">
+        <attr format="string|reference" name="content_value"/>
+        <attr format="boolean" name="checked_value"/>
+    </declare-styleable>
+    <declare-styleable name="CustomEditWithCount">
+        <attr name="value"/>
+        <attr name="hint"/>
+        <attr format="integer" name="maxcount"/>
+    </declare-styleable>
+    <declare-styleable name="CustomGroupTitle">
+        <attr name="title"/>
+        <attr name="icon"/>
+        <attr format="boolean" name="isopen"/>
+        <attr format="boolean" name="hasicon"/>
+    </declare-styleable>
+    <declare-styleable name="CustomInfiniteListView">
+        <attr format="boolean" name="enable_add"/>
+        <attr format="boolean" name="enable_save"/>
+    </declare-styleable>
+    <declare-styleable name="CustomMaxHeightRecyclerView">
+        <attr format="dimension" name="maxHeight"/>
+    </declare-styleable>
+    <declare-styleable name="CustomMiddleFilterView">
+        <attr name="text"/>
+        <attr name="text_color"/>
+        <attr name="text_size"/>
+        <attr name="position"/>
+        <attr name="icon_res"/>
+        <attr name="item_text_color"/>
+        <attr name="item_bg_color"/>
+        <attr name="item_text_size"/>
+        <attr name="num"/>
+    </declare-styleable>
+    <declare-styleable name="CustomMiddleSearchHistoryView">
+        <attr format="string" name="search_hint"/>
+        <attr format="integer" name="search_text_size"/>
+        <attr format="color" name="search_text_color"/>
+        <attr format="color" name="search_text_bg_color"/>
+        <attr format="color" name="search_bg_color"/>
+    </declare-styleable>
+    <declare-styleable name="CustomSearchTitleView">
+        
+        <attr format="float|dimension" name="custom_Radio"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTabView">
+        <attr name="title"/>
+        <attr format="string" name="countstring"/>
+        <attr format="boolean" name="leftneedshow"/>
+        <attr format="boolean" name="rightneedshow"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTextState">
+        <attr name="value"/>
+        <attr name="color"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTitleValueDetail">
+        <attr name="title"/>
+        <attr name="value"/>
+        <attr name="icon"/>
+        <attr format="boolean" name="fixedline"/>
+        <attr format="boolean" name="lineneedshow"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTitleValueEdit">
+        <attr name="title"/>
+        <attr name="value"/>
+        <attr name="hint"/>
+        <attr format="integer" name="edit_type"/>
+        <attr format="boolean" name="isrequired"/>
+        <attr format="boolean" name="is_need_show_arrow"/>
+        <attr format="boolean" name="is_current_page_edit"/>
+        <attr format="integer" name="maxlength"/>
+        <attr format="float" name="maxmoney"/>
+        <attr format="string" name="digits"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTitleValueSmall">
+        <attr name="title"/>
+        <attr name="value"/>
+        <attr name="icon"/>
+    </declare-styleable>
+    <declare-styleable name="CustomTitleValueSmallTop">
+        <attr format="string" name="titleleft"/>
+        <attr format="string" name="valueleft"/>
+        <attr format="string" name="titleright"/>
+        <attr format="string" name="valueright"/>
+    </declare-styleable>
+    <declare-styleable name="DifffrentColorTextView">
+        <attr format="string" name="textone"/>
+        <attr format="color" name="colorone"/>
+        <attr format="string" name="texttwo"/>
+        <attr format="color" name="colortwo"/>
+        <attr format="integer" name="textsizeone"/>
+        <attr format="integer" name="textsizetwo"/>
+    </declare-styleable>
+    <declare-styleable name="FileListView">
+        <attr format="boolean" name="isShow"/>
+    </declare-styleable>
+    <declare-styleable name="MaxHeightView">
+        <attr format="reference|float" name="mhv_HeightRatio"/>
+        <attr format="reference|dimension" name="mhv_HeightDimen"/>
+    </declare-styleable>
+    <declare-styleable name="SimpleSwitchView">
+        <attr format="string" name="values"/>
+        <attr name="text_width"/>
+        <attr name="text"/>
+        <attr name="text_size"/>
+        <attr name="text_color"/>
+        <attr name="necessary"/>
+        <attr name="enable"/>
+        <attr name="editable"/>
+    </declare-styleable>
+    <declare-styleable name="TagFlowLayout">
+        <attr format="integer" name="max_select"/>
+        <attr name="tag_gravity">
+            <enum name="left" value="-1"/>
+            <enum name="center" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="WarpLinearLayout">
+        <attr format="enum" name="grivate">
+            <enum name="right" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+        <attr format="dimension" name="horizontal_Space"/>
+        <attr format="dimension" name="vertical_Space"/>
+        <attr format="boolean" name="isFull"/>
+    </declare-styleable>
+</resources>

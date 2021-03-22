@@ -1,0 +1,9 @@
+include ':module_bap'
+include ':testLibrary'
+include ':module_beacon'
+include ':module_login'
+include ':module_webview'
+include ':module_map'
+include ':middleware'
+include ':app'
+rootProject.name = "FusePla"

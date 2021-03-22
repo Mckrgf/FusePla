@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitesmoke"
+    android:orientation="vertical"
+    tools:context=".module_beacon.rssiCorrection.BluetoothDetailActivity">
+
+    <include layout="@layout/all_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y400">
+        <com.supcon.common.view.view.js.BridgeWebView
+            android:id="@+id/webView"
+            android:tag="webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/bt_choose_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y64"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/y24"
+            android:background="@drawable/bg_button_blue_round"
+            android:text="@string/click_choose_coor"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x32" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginTop="@dimen/y15"
+        android:layout_marginBottom="@dimen/y10"
+        android:text="设备详情"
+        android:textColor="@color/text_gray_7"
+        android:textSize="@dimen/x24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x24"
+            android:gravity="center_vertical"
+            android:text="楼层"
+            android:textSize="@dimen/x30" />
+
+        <EditText
+            android:id="@+id/et_floor_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x76"
+            android:background="@null"
+            android:hint="楼层信息"
+            android:textSize="@dimen/x30" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x24"
+            android:gravity="center_vertical"
+            android:text="坐标"
+            android:textSize="@dimen/x30" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/et_gps_content"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x76"
+            android:background="@null"
+            android:hint="坐标信息"
+            android:textSize="@dimen/x30" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/x24"
+            android:gravity="center_vertical"
+            android:text="一米强度"
+            android:textSize="@dimen/x25" />
+
+        <EditText
+            android:enabled="false"
+            android:id="@+id/et_p0"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x76"
+            android:background="@null"
+            android:hint="一米强度"
+            android:textSize="@dimen/x30" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x24"
+            android:layout_marginTop="@dimen/y15"
+            android:layout_marginBottom="@dimen/y10"
+            android:text="影响因子"
+            android:textColor="@color/text_gray_7"
+            android:textSize="@dimen/x24" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1px"
+            android:layout_weight="1"/>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bt_template_use"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y40"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/bg_button_blue_round"
+            android:text="套用模板"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24" />
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/bt_template_manage"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/y40"
+            android:background="@drawable/bg_button_blue_round"
+            android:text="模板管理"
+            android:layout_marginRight="@dimen/x24"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x24" />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_rssi_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/x10"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/x10"
+            android:text="绑定"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_blue_round"
+            android:id="@+id/bt_bind"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/x10"
+            android:text="信标属性"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_blue_round"
+            android:id="@+id/bt_detail"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y60"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/x10"
+            android:text="解绑"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_button_blue_round"
+            android:id="@+id/bt_unBind"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion       rootProject.ext.compileSdkVersion
+    defaultConfig {
+        minSdkVersion       rootProject.ext.minSdkVersion
+        targetSdkVersion    rootProject.ext.targetSdkVersion
+        versionCode         rootProject.ext.versionCode
+        versionName         rootProject.ext.versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+
+    }
+
+    //支持Java8
+    defaultConfig.javaCompileOptions {
+        annotationProcessorOptions {
+            includeCompileClasspath = true
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "String", "PACKAGE_CODE", "\"${rootProject.ext.ProductCode}\""
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+        debug{
+            buildConfigField "String", "PACKAGE_CODE", "\"${rootProject.ext.ProductCode}\""
+        }
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.13-beta-3'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    implementation project(':middleware')
+    annotationProcessor "com.supcon.mes.common:apt:$rootProject.ext.aptVersion@jar"
+    implementation 'org.jetbrains:annotations:15.0'
+
+}

@@ -1,0 +1,5 @@
+{
+  "app": [
+    {"name": "作业管理",   "code": "WTS_TicketManage",        "id": 4, "sort": 4, "module": "作业票管理", "router": "WTS_TicketManage", "isHidden": false}
+  ]
+}

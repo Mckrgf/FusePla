@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="themeColor2">#356cbc</color>//3467bc 0F78BC
+    <color name="themeColor">#2874d2</color>
+    <color name="webThemeColor">#2874d2</color>
+    <color name="deviceTitleColor">#3c5569</color>
+    <color name="deleteBgColor">#E05543</color>
+    <color name="textColor5251">#323232</color>
+    <color name="tabtSelectColor">#356cbc</color>
+    <color name="xjAreaBlue">#366CBC</color>
+    <color name="xjAreaLineBlue">#c5d3ef</color>
+    <color name="BgXjAreaBlue">#f0f4fc</color>
+    <color name="xjStateBg">#F0F4FC</color>
+
+    <color name="faultInfoBg">#EF8742</color>
+    <color name="maintenaceBg">#2799C9</color>
+    <color name="lubricateBg">#9CBF3E</color>
+    <color name="bigRepairBg">#de7718</color>
+    <color name="checkRepairBg">#de7718</color>
+    <color name="workSource">#5b7b94</color>
+
+
+    <color name="random_1">#EF8742</color>
+    <color name="random_2">#2799C9</color>HSE2/limitSpaceWork/limitSpaceWork/conformList.action?__pc__=SFNFMl84LjAuMC4wX2xpbWl
+    <color name="random_3">#9CBF3E</color>
+
+    <color name="gradient_start">#377edf</color>
+    <color name="gradient_end">#2799c9</color>
+    <color name="yhfx_color">#EF8742</color>
+    <color name="yhpg_color">#9CBF3E</color>
+    <color name="yhzg_color">#2799c9</color>
+    <color name="yhfc_color">#e05543</color>
+    <color name="yh_item_bg">#f5f5f5</color>
+
+    <color name="normal_gray">#f5f5f5</color>
+    <color name="confuse">#2799C9</color>
+    <color name="operate">#E05543</color>
+
+    <color name="txl_view_title">#16B1E6</color>
+
+
+    <color name="titleBgColor">#F6F6F6</color>
+    <color name="titleTextColor">#666666</color>
+    <color name="light_gray">#EEE</color>
+    <color name="status_blue">#1E82D2</color>
+    <color name="status_orange">#FF824B</color>
+    <color name="status_green">#87CF76</color>
+    <color name="status_other">#626262</color>
+    <color name="bg_default">#FEFFFF</color>
+
+    <color name="blue_dodger">#1E90FF</color>
+    <color name="black_text">#1c2124</color>
+    <color name="gray_text">#999798</color>
+    <color name="grey_line">#DCDCDC</color>
+    <color name="gray_light">#F5F5F5</color>
+    <color name="light_blue_bg">#57B6FF</color>
+    <color name="dark_text">#333333</color>
+    <color name="dark_text99">#999999</color>
+    <color name="bg_light_grey">#f0f0f0</color>
+    <color name="blue_background">#ff40b0fa</color>
+    <color name="blue_text">#009AFC</color>
+    <color name="blue_light">#48C7DA</color>
+    <color name="bg_deep_grey">#E2E6EA</color>
+    <color name="title_bg">#1e82d2</color>
+    <color name="gray_deep">#D1D4DB</color>
+
+    <color name="gray_background">#fff8f8f8</color>
+    <color name="contact_text_color">#f8fdfe</color>
+    <color name="red_light">#FFE8E5</color>
+    <color name="grey_filter_bg">#EFEFEF</color>
+    <color name="list_bg_color">#F8F8F8</color>
+    <color name="cycle_bg_color">#EFF3F9</color>
+
+    <color name="SBDAListGray">#BCBCBC</color>
+    <color name="SBDAListGreen">#8AD790</color>
+    <color name="SBDAListRed">#E0838E</color>
+    <color name="SBDAListYellow">#DEC76D</color>
+    <color name="SBDAListBlue">#2799C9</color>
+
+    <color name="popBgColor">#252525</color>
+
+    <color name="c_scan_bt">#1E82D2</color>
+    <color name="c_scan_round">#58F27A</color>
+    <color name="c_scan_remind">#7D7979</color>
+    <color name="c_scan_line">#ffdcdcdc</color>
+    <color name="c_scan_333">#ff333333</color>
+    <color name="c_scan_666">#666666</color>
+    <color name="c_scan_F8">#F8F8F8</color>
+    <color name="c_scan_9">#999999</color>
+
+    <color name="EamInUse">#2BA966</color>
+    <color name="EamForbidden">#FA824D</color>
+    <color name="EamSealing">#A99C2B</color>
+    <color name="EamaBandonment">#B1B1B1</color>
+    <color name="EamOverdue">#188CC8</color>
+    <color name="EamDegradation">#A9492B</color>
+    <!--背景颜色-->
+    <color name="wts_bg_color">#F8F8F8</color>
+    <!--填写作业票分类标题-->
+    <color name="wts_write_ticket_title">#F9F9F9</color>
+    <color name="green_btn">#00C482</color>
+
+
+</resources>

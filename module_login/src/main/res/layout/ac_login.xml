@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_login"
+    android:id="@+id/loginBg"
+    android:tag="loginBg"
+    android:paddingTop="@dimen/dp_23"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:id="@+id/loginLogo"
+                android:tag="loginLogo"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_login_logo1"
+                />
+            <TextView
+                android:id="@+id/tvLoginLogoTitle"
+                android:tag="tvLoginLogoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="@string/login_new_supplant"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                />
+            <LinearLayout
+                android:id="@+id/llInput"
+                android:tag="llInput"
+                android:layout_width="300dp"
+                android:layout_height="240dp"
+                android:orientation="vertical"
+                android:background="@drawable/sh_login_layout"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:paddingTop="@dimen/dp_18"
+                android:paddingBottom="@dimen/dp_18"
+                android:layout_marginTop="@dimen/dp_30"
+                >
+
+                <RelativeLayout
+                    android:layout_width="245dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/sh_login_input"
+                    >
+                    <ImageView
+                        android:id="@+id/icLoginUser"
+                        android:tag="icLoginUser"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background= "@drawable/ic_login_user"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        />
+
+                    <com.supcon.mes.mbap.view.CustomEditText
+                        android:id="@+id/usernameInput"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="60dp"
+                        android:paddingRight="@dimen/dp_20"
+                        android:tag="usernameInput"
+                        app:edit_hint="@string/login_user_name"
+                        app:edit_hint_color="@color/hintColor"
+                        app:icon_visible="false"
+                        app:text_color="@color/textColorblack"
+                        app:text_size="14"
+                        app:text_width="0dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="245dp"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/sh_login_input"
+                    >
+                    <ImageView
+                        android:id="@+id/icLoginPassword"
+                        android:tag="icLoginPassword"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_login_password"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_centerVertical="true"
+                        />
+                    <com.supcon.mes.mbap.view.CustomEditText
+                        android:layout_width="245dp"
+                        android:layout_height="50dp"
+                        android:paddingLeft="60dp"
+                        android:paddingRight="@dimen/dp_20"
+                        android:id="@+id/pwdInput"
+                        android:tag="pwdInput"
+                        android:layout_gravity="center_horizontal"
+                        app:text_size="14"
+                        app:text_color="@color/textColorblack"
+                        app:edit_hint="@string/login_pass"
+                        app:edit_hint_color="@color/hintColor"
+                        app:icon_visible="false"
+                        app:text_width="0dp"
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dp_10"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_choose_no"
+                        android:layout_marginLeft="@dimen/dp_20"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:id="@+id/savePasswordIv"
+                        android:tag="savePasswordIv" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="60dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/login_remember_pass"
+                        android:textColor="@color/textColorlightblack"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/loginSettingLayout"
+                        android:tag="loginSettingLayout"
+                        android:text="@string/login_net_setting"
+                        android:background="@null"
+                        android:textColor="#0E95FF"
+                        android:textSize="@dimen/fontSize_12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        />
+                </RelativeLayout>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/loginBtn"
+                    android:tag="loginBtn"
+                    android:background="@drawable/sl_login_btn"
+                    android:text="@string/login_logging"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    />
+
+
+            </LinearLayout>
+
+            <com.supcon.mes.mbap.view.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:key_width="0dp"
+                app:text_size="10"
+                android:id="@+id/buildVersion"
+                android:tag="buildVersion"
+                app:content_color="@color/white"
+                android:layout_marginLeft="@dimen/dp_10"
+                app:gravity="center"
+                />
+            <com.supcon.mes.mbap.view.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                app:key_width="0dp"
+                app:text_size="10"
+                android:id="@+id/productVersion"
+                android:tag="productVersion"
+                app:content_color="@color/white"
+                android:layout_marginLeft="@dimen/dp_10"
+                app:gravity="center"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

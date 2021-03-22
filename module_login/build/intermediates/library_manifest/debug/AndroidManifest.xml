@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.supcon.mes.module_login"
+    android:versionCode="1"
+    android:versionName="1.0.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="26" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true" >
+        <activity
+            android:name="com.supcon.mes.module_login.ui.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splash_Theme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.supcon.mes.module_login.ui.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBottomInTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.supcon.mes.module_login.ui.NetworkSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBottomInTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.supcon.mes.module_login.ui.AboutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBottomInTheme"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+    </application>
+
+</manifest>

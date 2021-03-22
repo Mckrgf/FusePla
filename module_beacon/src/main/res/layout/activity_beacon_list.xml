@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".module_beacon.beaconManage.BeaconListActivity">
+
+    <include layout="@layout/all_title"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_search"
+            android:textSize="@dimen/x32"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/x24"
+            android:hint="@string/INPUT_DEVICE_NAME_HINT"/>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:gravity="center"
+            android:textSize="@dimen/x32"
+            android:textColor="@color/text_blue"
+            android:id="@+id/tv_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"/>
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设备总数"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginTop="@dimen/y7"
+        android:textSize="@dimen/x24"
+        android:layout_marginBottom="@dimen/x10"
+        android:id="@+id/tv_count"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="@dimen/y7"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rv_devices"/>
+
+</LinearLayout>

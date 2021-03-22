@@ -1,0 +1,197 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+	package
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:2:5-40
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:1-62:12
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:4:5-79
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:4:22-76
+uses-permission#android.permission.NFC
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:5:5-62
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:5:22-59
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:6:5-75
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:6:22-72
+uses-permission#android.permission.CALL_PHONE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:7:5-69
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:7:22-66
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:11:5-79
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:11:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:13:5-76
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:13:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:15:22-73
+uses-permission#android.permission.INTERNET
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:18:5-67
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:18:22-64
+uses-permission#android.permission.VIBRATE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:20:22-63
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:21:5-81
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:21:22-78
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:23:5-89
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:23:22-86
+uses-permission#android.permission.BLUETOOTH
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:25:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:26:5-74
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:26:22-71
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:28:5-80
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:28:22-77
+uses-permission#android.permission.CAMERA
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:29:5-65
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:29:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:30:5-71
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:30:22-68
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:32:5-77
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:32:22-74
+uses-permission#android.permission.DISABLE_KEYGUARD
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:34:5-75
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:34:22-72
+uses-permission#android.permission.FLASHLIGHT
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:35:5-69
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:35:22-66
+uses-permission#android.permission.USE_FINGERPRINT
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:36:5-74
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:36:22-71
+uses-permission#android.permission.KILL_BACKGROUND_PROCESSES
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:37:5-84
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:37:22-81
+uses-permission#com.android.launcher.permission.READ_SETTINGS
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:38:5-85
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:38:22-82
+uses-permission#android.permission.WAKE_LOCK
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:39:5-68
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:39:22-65
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:40:5-73
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:40:22-70
+uses-permission#android.permission.INSTALL_PACKAGES
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:41:5-75
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:41:22-72
+uses-permission#android.permission.DELETE_PACKAGES
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:42:5-74
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:42:22-71
+uses-permission#android.permission.INSTALL_LOCATION_PROVIDER
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:43:5-84
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:43:22-81
+uses-permission#android.permission.INSTALL_SHORTCUT
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:44:5-75
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:44:22-72
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:45:5-80
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:45:22-77
+uses-permission#android.permission.INSTANT_APP_FOREGROUND_SERVICE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:46:5-89
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:46:22-86
+uses-permission#android.permission.MEDIA_CONTENT_CONTROL
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:47:5-80
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:47:22-77
+uses-permission#android.permission.LOCATION_HARDWARE
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:48:5-76
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:48:22-73
+uses-permission#android.permission.GET_TASKS
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:49:5-68
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:49:22-65
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:50:5-75
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:50:22-72
+uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:51:5-84
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:51:22-81
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:53:5-85
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:53:22-82
+application
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:54:5-61:19
+	android:supportsRtl
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:56:9-35
+	android:allowBackup
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:55:9-35
+meta-data#com.amap.api.v2.apikey
+ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:57:9-59:64
+	android:value
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:59:13-61
+	android:name
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml:58:13-50
+uses-sdk
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+		ADDED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml
+		INJECTED from E:\WorkCode\FusePla\middleware\src\main\AndroidManifest.xml

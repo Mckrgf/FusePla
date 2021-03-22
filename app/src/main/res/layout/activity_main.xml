@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="首次进入，请选择版本"
+        android:textSize="25sp"
+        android:id="@+id/tv_title"/>
+
+    <RadioGroup
+        android:id="@+id/rg_all"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_a"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="工程助手（含BAP系统登录模块）"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_b"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="工程助手（不含BAP系统登录模块）"/>
+
+
+        <RadioButton
+            android:id="@+id/rb_c"
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="仅包含"/>
+
+
+
+    </RadioGroup>
+
+</RelativeLayout>

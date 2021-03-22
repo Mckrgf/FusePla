@@ -1,0 +1,6 @@
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <external-path name="apk" path="" />
+    <external-path name="pic2" path="Pictures/temppic" />
+
+</paths>

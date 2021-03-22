@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sh_white_stroke"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent" android:layout_height="30dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=""
+            style="@style/widgetTitleTextStyle"
+            android:id="@+id/webWidgetTitle"
+            android:tag="webWidgetTitle"
+            android:gravity="center_vertical"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/sl_widget_more"
+            android:id="@+id/webWidgetMore"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/dp_8"
+            android:tag="webWidgetMore" />
+    </RelativeLayout>
+    <include layout="@layout/ly_line_light_light" android:layout_height="@dimen/dp_1" android:layout_width="match_parent" android:layout_marginRight="10dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ProgressBar
+            android:id="@+id/webWidgetProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="2dip"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progressDrawable="@drawable/layer_web_progressbar"
+            android:tag="webWidgetProgress"
+            android:visibility="gone"
+            >
+        </ProgressBar>
+        <com.supcon.common.view.view.js.BridgeWebView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/webWidgetWebview"
+            android:tag="webWidgetWebview" >
+        </com.supcon.common.view.view.js.BridgeWebView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitesmoke"
+    tools:context=".module_beacon.rssiCorrection.RssiCorrectionActivity">
+
+    <include layout="@layout/all_title" />
+
+    <include layout="@layout/horizontal_divider" />
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        android:id="@+id/number_progress_bar"
+        style="@style/NumberProgressBar_Default"
+        custom:progress_reached_color="#3498DB"
+        custom:progress_unreached_color="#CCCCCC" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y80"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/et_search"
+            android:textSize="@dimen/x32"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/x24"
+            android:hint="@string/INPUT_DEVICE_NAME_HINT"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="搜索"
+            android:gravity="center"
+            android:textSize="@dimen/x32"
+            android:textColor="@color/text_blue"
+            android:id="@+id/tv_search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/x24"
+            android:paddingRight="@dimen/x24"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设备总数"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginTop="@dimen/y7"
+        android:layout_marginBottom="@dimen/y10"
+        android:textSize="@dimen/x24"
+        android:id="@+id/tv_count"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt_sort"
+        android:text="排序"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_devices"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/x24"
+        android:layout_marginRight="@dimen/x24"
+        android:layout_weight="1" />
+
+    <include layout="@layout/horizontal_divider" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_device_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="未选中设备" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/rv_rssi_data"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/x20"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_n"
+            android:hint="n值" />
+        <EditText
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/FLOOR"
+            android:id="@+id/et_floor"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bt_gps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/gps_select" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tv_coordinate_main"
+            android:hint="x坐标" />
+
+        <Button
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/bt_calculate"
+            android:text="计算" />
+
+        <Button
+            android:id="@+id/bt_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit" />
+    </LinearLayout>
+
+
+</LinearLayout>
