@@ -11,33 +11,33 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode rootProject.ext.versionCode
         versionName rootProject.ext.versionName
-
+        flavorDimensions "versionCode"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
-//    productFlavors {
-//        dev {
-//            applicationId 'com.supcon.supconpla'
-//            manifestPlaceholders = [CHANNEL_VALUE : name,
-//                                    APP_NAME            : "@string/application_name",
-//                                    APP_ICON            : "@mipmap/ic_logo",
-//                                    APP_ROUND_ICON      : "@drawable/ic_app_launcher_round",
-//                                    APP_SHARE_ID        : "com.supcon.supplant",
-//                                    PACKAGE_NAME:"com.supcon.supconpla"
-//            ]
-//        }
-//
-//        official {
-//            applicationId "com.supcon.supconpla"
-//            manifestPlaceholders = [CHANNEL_VALUE : name,
-//                                    APP_NAME            : "@string/application_name",
-//                                    APP_ICON            : "@mipmap/ic_logo",
-//                                    APP_ROUND_ICON      : "@drawable/ic_app_launcher_round",
-//                                    APP_SHARE_ID        : "com.supcon.supconpla",
-//                                    PACKAGE_NAME:"com.supcon.supconpla"
-//            ]
-//        }
-//    }
+    productFlavors {
+        dev {
+            applicationId 'com.supcon.supconpla'
+            manifestPlaceholders = [CHANNEL_VALUE : name,
+                                    APP_NAME            : "@string/application_name",
+                                    APP_ICON            : "@mipmap/ic_logo",
+                                    APP_ROUND_ICON      : "@drawable/ic_app_launcher_round",
+                                    APP_SHARE_ID        : "com.supcon.supplant",
+                                    PACKAGE_NAME:"com.supcon.supconpla"
+            ]
+        }
+
+        official {
+            applicationId "com.supcon.supconpla"
+            manifestPlaceholders = [CHANNEL_VALUE : name,
+                                    APP_NAME            : "@string/application_name",
+                                    APP_ICON            : "@mipmap/ic_logo",
+                                    APP_ROUND_ICON      : "@drawable/ic_app_launcher_round",
+                                    APP_SHARE_ID        : "com.supcon.supconpla",
+                                    PACKAGE_NAME:"com.supcon.supconpla"
+            ]
+        }
+    }
     signingConfigs {
         keystore {
             keyAlias 'mobile'

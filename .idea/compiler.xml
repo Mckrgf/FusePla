@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="1.7">
+      <module name="FusePla.app" target="1.8" />
+      <module name="FusePla.middleware" target="1.8" />
+      <module name="FusePla.module_bap" target="1.8" />
+      <module name="FusePla.module_beacon" target="1.8" />
+      <module name="FusePla.module_login" target="1.8" />
+      <module name="FusePla.module_map" target="1.8" />
+      <module name="FusePla.module_webview" target="1.8" />
       <module name="testLibrary" target="1.7" />
     </bytecodeTargetLevel>
   </component>

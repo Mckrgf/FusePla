@@ -35,16 +35,6 @@ ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:7:9-16:
 		ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:10:13-48
 	android:name
 		ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:8:13-47
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:11:13-15:29
-action#android.intent.action.MAIN
-ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:12:17-69
-	android:name
-		ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:12:25-66
-category#android.intent.category.LAUNCHER
-ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:14:17-77
-	android:name
-		ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:14:27-74
 activity#com.supcon.mes.module_login.ui.LoginActivity
 ADDED from E:\WorkCode\FusePla\module_login\src\main\AndroidManifest.xml:20:9-24:73
 	android:screenOrientation

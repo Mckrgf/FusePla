@@ -1,6 +1,6 @@
 import java.text.SimpleDateFormat
 
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 
 android {
@@ -12,78 +12,9 @@ android {
         versionName rootProject.ext.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
-        flavorDimensions("dev")
 
         ndk{
             abiFilters "armeabi-v7a", "x86", "armeabi" ,"aarch64"
-        }
-    }
-
-    productFlavors {
-        dev {
-            applicationId 'com.supcon.supconpla'
-            manifestPlaceholders = [CHANNEL_VALUE : name,
-                                    APP_NAME            : "@string/application_name",
-                                    APP_ICON            : "@mipmap/ic_logo",
-                                    APP_ROUND_ICON      : "@drawable/ic_app_launcher_round",
-                                    APP_SHARE_ID        : "com.supcon.supplant",
-                                    PACKAGE_NAME:"com.supcon.supconpla"
-            ]
-        }
-
-        official {
-            applicationId "com.supcon.supconpla"
-            manifestPlaceholders = [CHANNEL_VALUE : name,
-                                    APP_NAME            : "@string/application_name",
-                                    APP_ICON            : "@mipmap/ic_logo",
-                                    APP_ROUND_ICON      : "@drawable/ic_app_launcher_round",
-                                    APP_SHARE_ID        : "com.supcon.supconpla",
-                                    PACKAGE_NAME:"com.supcon.supconpla"
-            ]
-        }
-    }
-
-    signingConfigs {
-        keystore {
-            keyAlias 'mobile'
-            keyPassword '123456'
-            storeFile file('./mobile.jks')
-            storePassword '654321'
-        }
-    }
-
-    buildTypes {
-
-        release {
-            buildConfigField "boolean", "LOG_DEBUG", "false"
-
-            minifyEnabled false
-            multiDexEnabled true
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-//            signingConfig signingConfigs.keystore
-//            applicationVariants.all { variant ->
-//                variant.outputs.all {
-//                    def createTime = new Date().format("YYYYMMdd", TimeZone.getTimeZone("GMT+08:00"))
-//                    outputFileName = "SupBeaconPLEZJW-" + buildType.name + "-${createTime}" + ".apk"
-//                }
-//            }
-
-            //是否进行zipalign优化
-            zipAlignEnabled true
-            // 移除无用的resource文件
-            shrinkResources false
-        }
-        debug {
-
-            buildConfigField "boolean", "LOG_DEBUG", "true"
-            multiDexEnabled true
-        }
-
-    }
-    android.applicationVariants.all { variant ->
-        variant.outputs.all {
-            def createTime = new Date().format("YYMMdd", TimeZone.getTimeZone("GMT+08:00"))
-            outputFileName = "SupBeaconPLE-" + "-${createTime}" + ".apk"
         }
     }
 
@@ -98,10 +29,6 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
     }
 
-
-    lintOptions {
-        abortOnError false
-    }
 }
 
 dependencies {

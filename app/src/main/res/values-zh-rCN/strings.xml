@@ -2,6 +2,6 @@
 <resources>
     <string name="app_namea">FusePla</string>
     <string name="app_name">FusePla</string>
-    <string name="confirm">OK</string>
-    <string name="cancel">Cancel</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
 </resources>
