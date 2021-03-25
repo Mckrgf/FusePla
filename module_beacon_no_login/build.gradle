@@ -1,34 +1,52 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 29
-    buildToolsVersion "29.0.3"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        applicationId "com.supcon.supbeaconZJW"
-        minSdkVersion 23
-        targetSdkVersion 29
-        versionCode 1
-        versionName "1.0.0.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    //支持Java8
+    defaultConfig.javaCompileOptions {
+        annotationProcessorOptions {
+            includeCompileClasspath = true
         }
     }
-
-    android.applicationVariants.all { variant ->
-        variant.outputs.all {
-            def createTime = new Date().format("YYYYMMdd", TimeZone.getTimeZone("GMT+08:00"))
-            outputFileName = "SupBeaconPLEZJW-" + buildType.name + "-${createTime}" + ".apk"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildTypes {
+        release {
+            buildConfigField "String", "PACKAGE_CODE", "\"${rootProject.ext.ProductCode}\""
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
         }
+        debug{
+            buildConfigField "String", "PACKAGE_CODE", "\"${rootProject.ext.ProductCode}\""
+        }
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+    lintOptions {
+        abortOnError false
     }
 }
 

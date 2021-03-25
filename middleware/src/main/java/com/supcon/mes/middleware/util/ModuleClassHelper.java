@@ -20,7 +20,7 @@ public class ModuleClassHelper {
      * 在这里设置模块名，未设置的模块这些资源不会导入
      */
     private static final String[] MODULES = {
-            "home", "module_login", "module_beacon","module_webview","middleware","module_map","app",
+            "home", "module_login", "module_beacon","module_webview","middleware","module_map","app","module_beacon_no_login"
     };
 
     private static class MainRouterHolder {

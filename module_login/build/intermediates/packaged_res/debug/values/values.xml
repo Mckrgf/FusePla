@@ -95,7 +95,7 @@
     </style>
     <style name="SplashTheme" parent="AppTheme">
         <item name="android:windowBackground">@drawable/layer_welcome</item>
-        
+        <!--<item name="android:statusBarColor" tools:ignore="NewApi">@color/white</item>-->
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
