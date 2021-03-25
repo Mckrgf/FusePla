@@ -1,3 +1,5 @@
+include ':module_beacon_no_login'
+include ':JavaTestlib'
 include ':module_bap'
 include ':testLibrary'
 include ':module_beacon'

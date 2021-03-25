@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_marginLeft="@dimen/x28"
+    android:layout_marginRight="@dimen/x28"
+    android:layout_marginBottom="@dimen/x48"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="@dimen/x112"
+        android:layout_height="@dimen/y112"
+        android:src="@mipmap/function_rssi_collect"
+        android:id="@+id/iv_function"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/x7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_function"
+        android:textColor="@color/black_function"
+        android:textSize="@dimen/x24"
+        android:text="功能名"/>
+
+</LinearLayout>

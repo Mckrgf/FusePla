@@ -12,10 +12,12 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/JavaTestlib" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/middleware" />
             <option value="$PROJECT_DIR$/module_bap" />
             <option value="$PROJECT_DIR$/module_beacon" />
+            <option value="$PROJECT_DIR$/module_beacon_no_login" />
             <option value="$PROJECT_DIR$/module_login" />
             <option value="$PROJECT_DIR$/module_map" />
             <option value="$PROJECT_DIR$/module_webview" />

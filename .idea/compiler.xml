@@ -6,6 +6,7 @@
       <module name="FusePla.middleware" target="1.8" />
       <module name="FusePla.module_bap" target="1.8" />
       <module name="FusePla.module_beacon" target="1.8" />
+      <module name="FusePla.module_beacon_no_login" target="1.8" />
       <module name="FusePla.module_login" target="1.8" />
       <module name="FusePla.module_map" target="1.8" />
       <module name="FusePla.module_webview" target="1.8" />

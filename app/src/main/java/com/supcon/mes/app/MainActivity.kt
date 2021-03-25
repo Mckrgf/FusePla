@@ -22,7 +22,7 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         newFragment = CustomDialogFragment()
 
-        rg_all.setOnCheckedChangeListener { group, checkedId ->
+        rg_all.setOnCheckedChangeListener { _, checkedId ->
             when (checkedId) {
                 R.id.rb_a -> {
                     checkConfirm(0)
@@ -93,9 +93,9 @@ class MainActivity : BaseActivity() {
     }
 
     companion object {
-        val SP_KEY_APP_MODE = "SP_KEY_APP_MODE"
-        val SP_APP_MODE_A = "SP_APP_MODE_A"
-        val SP_APP_MODE_B = "SP_APP_MODE_B"
-        val SP_APP_MODE_C = "SP_APP_MODE_C"
+        const val SP_KEY_APP_MODE = "SP_KEY_APP_MODE"
+        const val SP_APP_MODE_A = "SP_APP_MODE_A"
+        const val SP_APP_MODE_B = "SP_APP_MODE_B"
+        const val SP_APP_MODE_C = "SP_APP_MODE_C"
     }
 }
