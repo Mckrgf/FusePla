@@ -8,6 +8,7 @@ import com.supcon.common.com_router.util.RouterManager;
 import com.supcon.mes.module_login.ui.AboutActivity;
 import com.supcon.mes.module_login.ui.LoginActivity;
 import com.supcon.mes.module_login.ui.NetworkSettingActivity;
+import com.supcon.mes.module_login.ui.WelcomeActivity;
 import java.lang.String;
 
 /**
@@ -20,6 +21,7 @@ public final class IntentRouter implements IRouter {
     RouterManager.getInstance().register("ABOUT", AboutActivity.class);
     RouterManager.getInstance().register("login", LoginActivity.class);
     RouterManager.getInstance().register("NETWORK_SETTING", NetworkSettingActivity.class);
+    RouterManager.getInstance().register("welcome", WelcomeActivity.class);
   }
 
   /**
@@ -38,6 +40,9 @@ public final class IntentRouter implements IRouter {
       		break;
       	case "NETWORK_SETTING": 
       		intent.setClass(context, NetworkSettingActivity.class);
+      		break;
+      	case "welcome": 
+      		intent.setClass(context, WelcomeActivity.class);
       		break;
       default: 
       		RouterManager routerManager = RouterManager.getInstance();

@@ -1,10 +1,12 @@
 package com.supcon.fusepla
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.ToastUtils
-import kotlinx.android.synthetic.main.activity_main.*
+import com.supcon.mes.middleware.constant.Constant
+import com.supcon.mes.module_login.IntentRouter
+import kotlinx.android.synthetic.main.activity_main1.*
 
 class MainActivity : AppCompatActivity() {
     private lateinit var newFragment: CustomDialogFragment
@@ -12,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main1)
         newFragment = CustomDialogFragment()
 
         rg_all.setOnCheckedChangeListener { group, checkedId ->
@@ -37,6 +39,7 @@ class MainActivity : AppCompatActivity() {
             SP_APP_MODE_A -> {
                 ToastUtils.showShort("模式A已经选择")
                 rb_a.isChecked = true
+                IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
             }
             SP_APP_MODE_B -> {
                 ToastUtils.showShort("还未整合B")

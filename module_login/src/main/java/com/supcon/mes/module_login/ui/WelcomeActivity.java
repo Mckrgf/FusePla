@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 
+import com.app.annotation.apt.Router;
 import com.supcon.common.view.util.ToastUtils;
 import com.supcon.mes.mbap.MBapApp;
 import com.supcon.mes.middleware.constant.Constant;
@@ -16,7 +17,7 @@ import com.supcon.mes.module_login.R;
 /**
  * Created by wangshizhan on 2017/8/11.
  */
-
+@Router(Constant.Router.WELCOME)
 public class WelcomeActivity extends Activity {
 
 
