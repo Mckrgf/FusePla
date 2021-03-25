@@ -41,7 +41,7 @@
                 android:id="@+id/llInput"
                 android:tag="llInput"
                 android:layout_width="300dp"
-                android:layout_height="240dp"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:background="@drawable/sh_login_layout"
                 android:layout_gravity="center_horizontal"
@@ -164,6 +164,18 @@
                     android:tag="loginBtn"
                     android:background="@drawable/sl_login_btn"
                     android:text="@string/login_logging"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/bt_app_mode"
+                    android:tag="bt_app_mode"
+                    android:background="@drawable/sl_login_btn"
+                    android:text="@string/choose_app_mode"
                     android:textColor="@color/white"
                     android:textSize="13sp"
                     />

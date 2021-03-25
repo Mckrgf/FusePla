@@ -1,11 +1,12 @@
-package com.supcon.fusepla
+package com.supcon.app
 
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.support.v4.app.DialogFragment
 import com.blankj.utilcode.util.SPUtils
-import com.blankj.utilcode.util.ToastUtils
+import com.supcon.mes.R
+import com.supcon.mes.app.MainActivity
 
 /**
  * @author : yaobing
@@ -22,6 +23,8 @@ class CustomDialogFragment : DialogFragment() {
                     "确定"
                 ) { dialog, id ->
                     SPUtils.getInstance().put(MainActivity.SP_KEY_APP_MODE,tag!!)
+                    var activity : MainActivity = activity as MainActivity
+                    activity.goNext(tag!!)
                 }
                 .setNegativeButton(
                     R.string.cancel

@@ -1,4 +1,4 @@
-package com.supcon.fusepla
+package com.supcon.mes
 
 import org.junit.Test
 

@@ -1,20 +1,25 @@
-package com.supcon.fusepla
+package com.supcon.mes.app
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import com.app.annotation.apt.Router
 import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.ToastUtils
+import com.supcon.app.CustomDialogFragment
+import com.supcon.common.view.base.activity.BaseActivity
+import com.supcon.mes.R
 import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.module_login.IntentRouter
 import kotlinx.android.synthetic.main.activity_main1.*
 
-class MainActivity : AppCompatActivity() {
+@Router(value = Constant.Router.ROOTACTIVITY)
+class MainActivity : BaseActivity() {
     private lateinit var newFragment: CustomDialogFragment
-    var aa = 0
+    override fun getLayoutID(): Int {
+        return R.layout.activity_main1
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main1)
         newFragment = CustomDialogFragment()
 
         rg_all.setOnCheckedChangeListener { group, checkedId ->
@@ -37,37 +42,54 @@ class MainActivity : AppCompatActivity() {
                 ToastUtils.showShort("还未选择APP模式")
             }
             SP_APP_MODE_A -> {
-                ToastUtils.showShort("模式A已经选择")
-                rb_a.isChecked = true
                 IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
             }
             SP_APP_MODE_B -> {
-                ToastUtils.showShort("还未整合B")
-                rb_b.isChecked = true
+                // TODO: 2021/3/25 跳转到B模块
             }
             SP_APP_MODE_C -> {
-                ToastUtils.showShort("还未整合C")
-                rb_c.isChecked = true
+                // TODO: 2021/3/25 跳转到scanwriter
             }
         }
     }
 
     private fun checkConfirm(i: Int) {
-        aa++
-        if (aa > 1) {
-            when (i) {
-                0 -> {
-                    newFragment.show(supportFragmentManager, SP_APP_MODE_A)
-                }
-                1 -> {
-                    newFragment.show(supportFragmentManager, SP_APP_MODE_B)
-                }
-                2 -> {
-                    newFragment.show(supportFragmentManager, SP_APP_MODE_C)
-                }
+        when (i) {
+            0 -> {
+                newFragment.show(
+                    supportFragmentManager,
+                    SP_APP_MODE_A
+                )
             }
+            1 -> {
+                newFragment.show(
+                    supportFragmentManager,
+                    SP_APP_MODE_B
+                )
+            }
+            2 -> {
+                newFragment.show(
+                    supportFragmentManager,
+                    SP_APP_MODE_C
+                )
+            }
+
         }
 
+    }
+
+    fun goNext(tag: String) {
+        when(tag) {
+            SP_APP_MODE_A -> {
+                IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
+            }
+            SP_APP_MODE_A -> {
+
+            }
+            SP_APP_MODE_A -> {
+
+            }
+        }
     }
 
     companion object {

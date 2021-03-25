@@ -134,6 +134,7 @@ open class BaseActivity : AppCompatActivity() {
                             bundle.putBoolean(Constant.IntentKey.FIRST_LOGIN, true)
                             bundle.putBoolean(Constant.IntentKey.LOGOUT, true)
                             IntentRouter.go(this@BaseActivity, Constant.Router.LOGIN, bundle)
+                            finish()
                         }
                         else -> {
                         }

@@ -45,7 +45,7 @@ public class WelcomeActivity extends Activity {
                 IntentRouter.go(WelcomeActivity.this, Constant.Router.LOGIN, bundle);
             }
             
-//            finish();
+            finish();
         }, welcomeStartTime);
     }
 

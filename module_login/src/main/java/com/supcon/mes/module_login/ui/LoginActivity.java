@@ -18,6 +18,7 @@ import android.widget.TextView;
 import com.app.annotation.BindByTag;
 import com.app.annotation.Presenter;
 import com.app.annotation.apt.Router;
+import com.blankj.utilcode.util.SPUtils;
 import com.jakewharton.rxbinding2.view.RxView;
 import com.jakewharton.rxbinding2.widget.RxTextView;
 import com.supcon.common.view.base.activity.BaseControllerActivity;
@@ -48,6 +49,7 @@ import com.supcon.mes.module_login.BuildConfig;
 import com.supcon.mes.module_login.IntentRouter;
 import com.supcon.mes.module_login.R;
 import com.supcon.mes.module_login.util.AssetsViewHelper;
+import com.supcon.mes.module_login.util.IntentUtils;
 import com.tbruyelle.rxpermissions2.Permission;
 import com.tbruyelle.rxpermissions2.RxPermissions;
 
@@ -95,6 +97,8 @@ public class LoginActivity extends BaseControllerActivity implements LogoutContr
     TextView loginSettingLayout;
     @BindByTag("loginBtn")
     Button loginBtn;
+    @BindByTag("bt_app_mode")
+    Button bt_app_mode;
 
     private boolean isFirstIn = false;
     private boolean logout = false;
@@ -249,6 +253,12 @@ public class LoginActivity extends BaseControllerActivity implements LogoutContr
                 savePassword = true;
             }
 
+        });
+
+        bt_app_mode.setOnClickListener(v -> {
+            SPUtils.getInstance().put("SP_KEY_APP_MODE", "");
+            IntentRouter.go(this, Constant.Router.ROOTACTIVITY);
+            finish();
         });
 
         RxTextView.textChanges(usernameInput.editText())

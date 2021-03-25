@@ -86,4 +86,5 @@
     <string name="login_search_radius">请设置搜索半径（单位：米）</string>
     <string name="login_search_radius_hint">半径为0表示不限制搜索半径</string>
     <string name="login_user_name">用户名</string>
+    <string name="choose_app_mode">选择APP模式</string>
 </resources>

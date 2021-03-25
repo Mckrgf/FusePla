@@ -2462,6 +2462,7 @@ id blocking
 id blueBtn
 id bottom
 id bounce
+id bt_app_mode
 id buildVersion
 id button
 id buttonPanel
@@ -3172,6 +3173,7 @@ string but_test
 string cancel
 string character_counter_content_description
 string character_counter_pattern
+string choose_app_mode
 string common_cancel
 string common_load_more
 string common_loading

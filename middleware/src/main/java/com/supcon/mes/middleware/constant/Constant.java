@@ -126,6 +126,7 @@ public interface Constant {
         String TICKET_DETAIL = "TICKET_DETAIL";
         String BEACON_WELCOME = "BEACON_WELCOME"; // 工程助手app
         String BEACON_HOME = "BEACON_HOME"; // 工程助手app
+        String ROOTACTIVITY = "ROOTACTIVITY"; // 工程助手app
     }
 
     /**
