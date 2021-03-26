@@ -43,9 +43,11 @@ class MainActivity : BaseActivity() {
             }
             SP_APP_MODE_A -> {
                 IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
+                finish()
             }
             SP_APP_MODE_B -> {
                 IntentRouter.go(this@MainActivity, Constant.Router.SPLASH, Bundle())
+                finish()
             }
             SP_APP_MODE_C -> {
                 // TODO: 2021/3/25 跳转到scanwriter
@@ -82,14 +84,20 @@ class MainActivity : BaseActivity() {
         when(tag) {
             SP_APP_MODE_A -> {
                 IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
+                finish()
             }
             SP_APP_MODE_B -> {
                 IntentRouter.go(this@MainActivity, Constant.Router.SPLASH, Bundle())
+                finish()
             }
             SP_APP_MODE_C -> {
 
             }
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
     }
 
     companion object {
