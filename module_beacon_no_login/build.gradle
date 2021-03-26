@@ -73,6 +73,7 @@ dependencies {
 //    api "com.supcon.mes.common:annotation:9.7.29.5release1"
 //    api "com.supcon.mes.common:com_router:9.7.29.5"
 //    api "com.supcon.mes.common:com_http:9.7.29.5"
+    implementation project(':middleware')
 
     implementation project(path: ':middleware')
     kapt "com.supcon.mes.common:apt:$rootProject.ext.aptVersion@jar"

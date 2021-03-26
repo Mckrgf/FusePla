@@ -13,15 +13,17 @@ import android.os.Bundle
 import android.support.annotation.NonNull
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AppCompatActivity
 import android.text.TextUtils
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.EditText
 import android.widget.TextView
-import android.support.v7.app.AppCompatActivity
+import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.ToastUtils
 import com.lzy.okgo.OkGo
+import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.module_beacon_no_login.customUI.DigitalEditText
 import com.supcon.mes.module_beacon_no_login.listener.PermissionListener
 import com.supcon.mes.module_beacon_no_login.utils.NetUtil
@@ -129,12 +131,18 @@ open class BaseActivity : AppCompatActivity() {
                         R.id.btn_cancel -> {
                             dismiss()
                         }
+                        R.id.bt_app_mode -> {
+                            SPUtils.getInstance().put("SP_KEY_APP_MODE", "")
+                            IntentRouter.go(context, Constant.Router.ROOTACTIVITY)
+                            finish()
+                        }
                         else -> {
                         }
                     }
                 }
                 findViewById<View>(R.id.btn_ok).setOnClickListener(mOnClickListener)
                 findViewById<View>(R.id.btn_cancel).setOnClickListener(mOnClickListener)
+                findViewById<View>(R.id.bt_app_mode).setOnClickListener(mOnClickListener)
             }
 
             override fun onBackPressed() { //在setCanclable为false的情况下，重写onBackPressed方法还是能够成功获取到回退事件的
