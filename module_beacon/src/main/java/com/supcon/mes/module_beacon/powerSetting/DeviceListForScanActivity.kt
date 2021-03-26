@@ -66,7 +66,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
         mHandler = Handler()
         val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
         mBluetoothAdapter = bluetoothManager.adapter
-        val list = mutableListOf(mBluetoothAdapter?.bondedDevices)
+        val list = mutableListOf(mBluetoothAdapter?.bondedDevices?.distinct())
         if ((mBluetoothAdapter?.bondedDevices?.size)!! > 0) {
             mDeviceListForBondAdapter.setNewData(mBluetoothAdapter?.bondedDevices?.distinct())
         }

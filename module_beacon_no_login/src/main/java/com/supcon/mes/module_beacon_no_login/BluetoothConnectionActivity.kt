@@ -15,7 +15,7 @@ import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
 import com.supcon.mes.module_beacon_no_login.event.BleReceiverEvent
 import com.supcon.mes.module_beacon_no_login.utils.ClsUtils
-import kotlinx.android.synthetic.main.activity_bluetooth_detail.*
+import kotlinx.android.synthetic.main.activity_bluetooth_detail_b.*
 import org.greenrobot.eventbus.EventBus
 
 /**

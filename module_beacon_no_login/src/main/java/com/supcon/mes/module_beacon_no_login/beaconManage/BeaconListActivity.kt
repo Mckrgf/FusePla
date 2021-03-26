@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.support.v7.widget.LinearLayoutManager
 import com.blankj.utilcode.util.ToastUtils
 import com.google.gson.internal.LinkedTreeMap
 import com.supcon.mes.module_beacon_no_login.BaseActivity

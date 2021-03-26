@@ -32,9 +32,9 @@ import android.os.Binder;
 import android.os.Build;
 import android.os.IBinder;
 import android.os.ParcelUuid;
+import android.support.annotation.RequiresApi;
 import android.util.Log;
 
-import androidx.annotation.RequiresApi;
 
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ToastUtils;

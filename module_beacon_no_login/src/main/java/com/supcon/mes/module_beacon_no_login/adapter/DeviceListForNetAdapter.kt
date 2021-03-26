@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
+import com.chad.library.adapter.base.BaseViewHolder
 import com.google.gson.internal.LinkedTreeMap
 import com.supcon.mes.module_beacon_no_login.beaconManage.BeaconListActivity
 import com.supcon.mes.module_beacon_no_login.beaconManage.DialogMapActivity

@@ -1,5 +1,6 @@
 package com.supcon.mes.module_beacon_no_login.adapter
 
+import android.annotation.SuppressLint
 import android.bluetooth.BluetoothDevice
 import android.content.Intent
 import android.text.TextUtils
@@ -7,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.blankj.utilcode.util.SPUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
+import com.chad.library.adapter.base.BaseViewHolder
 import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import com.supcon.mes.module_beacon_no_login.beaconManage.DialogMapActivity
@@ -29,15 +30,16 @@ class DeviceListForRssiAdapter(activity: RssiCorrectionActivity) : BaseQuickAdap
     init {
         mLeDevices = ArrayList()
     }
+    @SuppressLint("MissingPermission")
     override fun convert(holder: BaseViewHolder, item: MyBluetoothDevice) {
 
         holder.getView<TextView>(R.id.tv_name).text = item.device.name
         holder.getView<TextView>(R.id.tv_address).text = "信号强度：" + item.rssi
 
         holder.getView<ImageView>(R.id.iv_map).setOnClickListener {
-            val device = data[holder.adapterPosition] as BluetoothDevice
+            val device = data[holder.adapterPosition] as MyBluetoothDevice
             val intent = Intent(mActivity, DialogMapActivity::class.java)
-            intent.putExtra("device",device)
+            intent.putExtra("device",device.device)
             mActivity.startActivity(intent)
         }
 
@@ -78,7 +80,7 @@ class DeviceListForRssiAdapter(activity: RssiCorrectionActivity) : BaseQuickAdap
                 mLeDevices!!.removeAt(repeatPosition)
                 mLeDevices!!.add(repeatPosition,currentDevice!!)
             }
-            setList(mLeDevices)
+            setNewData(mLeDevices)
         }
     }
 
@@ -87,6 +89,7 @@ class DeviceListForRssiAdapter(activity: RssiCorrectionActivity) : BaseQuickAdap
         notifyDataSetChanged()
     }
 
+    @SuppressLint("MissingPermission")
     fun refresh(name: String) {
         val mLeDevicesSearched: ArrayList<MyBluetoothDevice>? = ArrayList()
         if (null != mLeDevices && mLeDevices?.size!! > 0) {
@@ -95,7 +98,7 @@ class DeviceListForRssiAdapter(activity: RssiCorrectionActivity) : BaseQuickAdap
                     mLeDevicesSearched?.add(mLeDevices!![i])
                 }
             }
-            setList(mLeDevicesSearched)
+            setNewData(mLeDevicesSearched)
         }
 
     }

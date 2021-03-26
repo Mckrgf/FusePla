@@ -2,11 +2,11 @@ package com.supcon.mes.module_beacon_no_login.utils;
 
 import android.bluetooth.le.ScanRecord;
 import android.os.ParcelUuid;
+import android.support.annotation.Nullable;
 import android.util.ArrayMap;
 import android.util.Log;
 import android.util.SparseArray;
 
-import androidx.annotation.Nullable;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

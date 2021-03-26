@@ -9,7 +9,7 @@ import android.widget.EditText
 import android.widget.TextView
 import com.blankj.utilcode.util.ToastUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
+import com.chad.library.adapter.base.BaseViewHolder
 import com.supcon.mes.module_beacon_no_login.bean.RssiData
 import com.supcon.mes.module_beacon_no_login.rssiCorrection.BluetoothDetailActivity
 import com.supcon.mes.module_beacon_no_login.utils.RssiDataUtil
@@ -61,7 +61,7 @@ class RssiDataListAdapter : BaseQuickAdapter<RssiData,BaseViewHolder>(R.layout.i
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
         })
         holder.getView<Button>(R.id.bt_scan).setOnClickListener {
-            val activity: BluetoothDetailActivity = context as BluetoothDetailActivity
+            val activity: BluetoothDetailActivity = mContext as BluetoothDetailActivity
             activity.checkPermissionAndScanDevice(holder.adapterPosition)
         }
         holder.getView<Button>(R.id.bt_calculate).setOnClickListener {

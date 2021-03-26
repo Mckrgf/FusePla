@@ -19,7 +19,7 @@ import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
 import android.view.animation.TranslateAnimation
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.support.v7.widget.LinearLayoutManager
 import com.blankj.utilcode.util.AppUtils
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
@@ -65,14 +65,15 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
         checkPermissionAndScanDevice()
     }
 
+    @SuppressLint("MissingPermission")
     private fun initData() {
         mHandler = Handler()
         val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
         mBluetoothAdapter = bluetoothManager.adapter
-        mDeviceListForBondAdapter.setList(mBluetoothAdapter?.bondedDevices)
+        mDeviceListForBondAdapter.setNewData(mBluetoothAdapter?.bondedDevices?.distinct())
     }
 
-    @SuppressLint("SetTextI18n")
+    @SuppressLint("SetTextI18n", "MissingPermission")
     private fun initView() {
         registerLoginBroadcast()
         mwaitdlg = ProgressDialog(this)
@@ -200,7 +201,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
         bt_sort.setOnClickListener {
             if (mDeviceListAdapter.data.size > 0) {
                 val data = CalculateUtil.sortBLEDevice(mDeviceListAdapter.data)
-                mDeviceListAdapter.setList(data)
+                mDeviceListAdapter.setNewData(data)
             }
         }
     }
@@ -240,6 +241,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
     fun onMessageEvent(event: HttpEvent?) {
     }
 
+    @SuppressLint("MissingPermission")
     private fun scanDevice(enable: Boolean) {
         if (enable) {
             iv_refresh.startAnimation(AnimationUtils.loadAnimation(this, R.anim.rotaterepeat))
@@ -347,6 +349,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
      * 蓝牙配对广播
      */
     inner class BlueToothBondReceiver : BroadcastReceiver() {
+        @SuppressLint("MissingPermission")
         override fun onReceive(context: Context, intent: Intent) {
             if (intent.action == BluetoothDevice.ACTION_BOND_STATE_CHANGED) {
                 // 找到设备后获取其设备
@@ -364,7 +367,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                         if (mwaitdlg?.isShowing!!) {
                             mwaitdlg?.dismiss()
                         }
-                        mDeviceListForBondAdapter.setList(mBluetoothAdapter?.bondedDevices)
+                        mDeviceListForBondAdapter.setNewData(mBluetoothAdapter?.bondedDevices?.distinct())
                         mDeviceListAdapter.notifyItemChanged(currentDevicePosition)
                         if (bleBonded(currentDevice!!)) {
                             val intent = Intent(this@DeviceListForScanActivity, DeviceControlActivity::class.java)
@@ -387,7 +390,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                             mwaitdlg?.dismiss()
                         }
                         mDeviceListAdapter.notifyItemChanged(currentDevicePosition)
-                        mDeviceListForBondAdapter.setList(mBluetoothAdapter?.bondedDevices)
+                        mDeviceListForBondAdapter.setNewData(mBluetoothAdapter?.bondedDevices?.distinct())
                     }
                     else -> {
                     }

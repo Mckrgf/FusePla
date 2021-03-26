@@ -57,8 +57,8 @@ class RssiCorrectionPresenter(context: RssiCorrectionActivity,iView : RssiCorrec
         mHandler = Handler()
         val bluetoothManager = mContext.getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
         mBluetoothAdapter = bluetoothManager.adapter
-//        mRssiDataListAdapter.setList(RssiDataUtil.get().createEmptyRssiList())
-//        mRssiDataListAdapter.setList(RssiDataUtil.get().createMockRssiList())
+//        mRssiDataListAdapter.setNewData(RssiDataUtil.get().createEmptyRssiList())
+//        mRssiDataListAdapter.setNewData(RssiDataUtil.get().createMockRssiList())
     }
 
     private val mLeScanCallback = BluetoothAdapter.LeScanCallback { device, rssi, _ ->

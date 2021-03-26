@@ -1,5 +1,6 @@
 package com.supcon.mes.module_beacon_no_login.adapter
 
+import android.annotation.SuppressLint
 import android.bluetooth.BluetoothDevice
 import android.content.Intent
 import android.os.Bundle
@@ -9,7 +10,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.blankj.utilcode.util.LogUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
+import com.chad.library.adapter.base.BaseViewHolder
 import com.supcon.mes.module_beacon_no_login.beaconManage.DialogMapActivity
 import com.supcon.mes.module_beacon_no_login.bean.MyBluetoothDevice
 import com.supcon.mes.module_beacon_no_login.powerSetting.DeviceListForScanActivity
@@ -30,6 +31,7 @@ class DeviceListForConnectAdapter(activity: DeviceListForScanActivity) : BaseQui
         mLeDevices = ArrayList()
     }
 
+    @SuppressLint("MissingPermission")
     override fun convert(holder: BaseViewHolder, item: MyBluetoothDevice) {
         holder.getView<TextView>(R.id.tv_name).text = item.device.name
 //        holder.getView<TextView>(R.id.tv_address).text = item.device.address
@@ -60,6 +62,7 @@ class DeviceListForConnectAdapter(activity: DeviceListForScanActivity) : BaseQui
         }
     }
 
+    @SuppressLint("MissingPermission")
     fun addDevice(currentDevice: MyBluetoothDevice?) {
         if (!mLeDevices!!.contains(currentDevice!!) && !TextUtils.isEmpty(currentDevice.device.name) && currentDevice.device.name.contains("")) {
             var deviceUnique = true //默认设备是唯一的
@@ -80,7 +83,7 @@ class DeviceListForConnectAdapter(activity: DeviceListForScanActivity) : BaseQui
                 mLeDevices!!.removeAt(repeatPosition)
                 mLeDevices!!.add(repeatPosition,currentDevice!!)
             }
-            setList(mLeDevices)
+            setNewData(mLeDevices)
         }
     }
 
@@ -90,6 +93,7 @@ class DeviceListForConnectAdapter(activity: DeviceListForScanActivity) : BaseQui
         notifyDataSetChanged()
     }
 
+    @SuppressLint("MissingPermission")
     fun refresh(name: String) {
         val mLeDevicesSearched: ArrayList<MyBluetoothDevice>? = ArrayList()
         if (null != mLeDevices && mLeDevices?.size!! > 0)

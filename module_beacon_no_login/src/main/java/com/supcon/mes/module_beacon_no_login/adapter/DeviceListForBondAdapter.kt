@@ -1,11 +1,12 @@
 package com.supcon.mes.module_beacon_no_login.adapter
 
+import android.annotation.SuppressLint
 import android.bluetooth.BluetoothDevice
 import android.content.Intent
 import android.widget.Button
 import android.widget.TextView
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
+import com.chad.library.adapter.base.BaseViewHolder
 import com.supcon.mes.module_beacon_no_login.powerSetting.DeviceControlActivity
 import com.supcon.mes.module_beacon_no_login.powerSetting.DeviceListForScanActivity
 import com.supcon.mes.module_beacon_no_login.utils.ClsUtils
@@ -26,6 +27,7 @@ class DeviceListForBondAdapter(activity: DeviceListForScanActivity) : BaseQuickA
     init {
         mLeDevices = ArrayList()
     }
+    @SuppressLint("MissingPermission")
     override fun convert(holder: BaseViewHolder, item: BluetoothDevice) {
         holder.getView<TextView>(R.id.tv_name).text = item.name
         holder.getView<TextView>(R.id.tv_address).text = item.address
@@ -34,14 +36,14 @@ class DeviceListForBondAdapter(activity: DeviceListForScanActivity) : BaseQuickA
         }
 
         holder.getView<Button>(R.id.bt_connect).setOnClickListener {
-            val intent = Intent(context, DeviceControlActivity::class.java)
+            val intent = Intent(mActivity, DeviceControlActivity::class.java)
             intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, item.getName())
             intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_ADDRESS, item.getAddress())
             if (mActivity.mScanning) {
                 mActivity.mBluetoothAdapter?.stopLeScan(mActivity.mLeScanCallback)
                 mActivity.mScanning = false
             }
-            context.startActivity(intent)
+            mActivity.startActivity(intent)
         }
     }
 

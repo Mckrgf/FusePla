@@ -45,7 +45,7 @@ class MainActivity : BaseActivity() {
                 IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
             }
             SP_APP_MODE_B -> {
-                // TODO: 2021/3/25 跳转到B模块
+                IntentRouter.go(this@MainActivity, Constant.Router.SPLASH, Bundle())
             }
             SP_APP_MODE_C -> {
                 // TODO: 2021/3/25 跳转到scanwriter
@@ -83,10 +83,10 @@ class MainActivity : BaseActivity() {
             SP_APP_MODE_A -> {
                 IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
             }
-            SP_APP_MODE_A -> {
-
+            SP_APP_MODE_B -> {
+                IntentRouter.go(this@MainActivity, Constant.Router.SPLASH, Bundle())
             }
-            SP_APP_MODE_A -> {
+            SP_APP_MODE_C -> {
 
             }
         }

@@ -1,6 +1,6 @@
 package com.supcon.mes.module_beacon_no_login.net
 
-import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import com.blankj.utilcode.util.ToastUtils
 import com.google.gson.Gson
 import com.lzy.okgo.OkGo

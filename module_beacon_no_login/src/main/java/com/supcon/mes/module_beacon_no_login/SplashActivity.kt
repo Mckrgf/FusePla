@@ -4,10 +4,13 @@ import android.Manifest
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import com.app.annotation.apt.Router
 import com.blankj.utilcode.util.ToastUtils
+import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.module_beacon_no_login.listener.PermissionListener
 import com.supcon.supbeacon.R
 
+@Router(value = Constant.Router.SPLASH)
 class SplashActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -11,7 +11,7 @@
     <include layout="@layout/all_title"
         android:id="@+id/all_title"/>
 
-    <androidx.recyclerview.widget.RecyclerView
+    <android.support.v7.widget.RecyclerView
         android:layout_marginRight="@dimen/x24"
         android:layout_marginLeft="@dimen/x24"
         android:layout_marginTop="@dimen/x48"

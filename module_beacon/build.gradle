@@ -68,8 +68,7 @@ dependencies {
 
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50'
 
-//    implementation 'com.blankj:utilcode:1.10.0'
-//    implementation 'androidx.multidex:multidex:2.0.1'
+
     implementation 'com.daimajia.numberprogressbar:library:1.4@aar'
     implementation 'com.lzy.net:okgo:3.0.4'
     api 'com.tencent.tbs.tbssdk:sdk:43903'

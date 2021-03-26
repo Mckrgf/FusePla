@@ -111,6 +111,7 @@ public interface Constant {
 
     interface Router {
         String WELCOME = "welcome";
+        String SPLASH = "splash";
         String MAIN = "main";
         String LOGIN = "login";
         String NETWORK_SETTING = "NETWORK_SETTING";

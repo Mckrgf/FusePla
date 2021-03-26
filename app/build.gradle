@@ -113,6 +113,7 @@ dependencies {
     implementation project(':module_webview')
     implementation project(':module_map')
     implementation project(':module_beacon')
+    implementation project(':module_beacon_no_login')
     implementation project(':middleware')
     implementation project(path: ':middleware')
     kapt "com.supcon.mes.common:apt:$rootProject.ext.aptVersion@jar"

@@ -7,7 +7,7 @@ import android.text.method.DigitsKeyListener
 import android.widget.Button
 import android.widget.TextView
 import com.chad.library.adapter.base.BaseQuickAdapter
-import com.chad.library.adapter.base.viewholder.BaseViewHolder
+import com.chad.library.adapter.base.BaseViewHolder
 import com.supcon.mes.module_beacon_no_login.powerSetting.DeviceControlActivity
 import com.supcon.supbeacon.R
 

@@ -2,8 +2,8 @@ package com.supcon.mes.module_beacon_no_login
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v7.widget.GridLayoutManager
 import android.view.View
-import androidx.recyclerview.widget.GridLayoutManager
 import com.blankj.utilcode.util.ToastUtils
 import com.supcon.mes.module_beacon_no_login.adapter.FunctionListAdapter
 import com.supcon.mes.module_beacon_no_login.beaconManage.BeaconListActivity
@@ -47,7 +47,7 @@ class HomeActivity : BaseActivity() {
         functions.add(Function("",R.mipmap.function_empty))
         rv_function.layoutManager = GridLayoutManager(this,4)
         rv_function.adapter = mFunctionListAdapter
-        mFunctionListAdapter?.setList(functions)
+        mFunctionListAdapter?.setNewData(functions)
 
         mFunctionListAdapter?.setOnItemClickListener { adapter, view, position ->
             when(position) {

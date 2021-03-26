@@ -77,8 +77,8 @@
             android:orientation="horizontal">
 
 
-            <com.supcon.supbeacon.customUI.DigitalEditText
-                android:id="@+id/et_newaddr"
+            <com.supcon.mes.module_beacon_no_login.customUI.DigitalEditText
+                android:id="@+id/et_newaddr1"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
                 android:layout_marginLeft="10dp"

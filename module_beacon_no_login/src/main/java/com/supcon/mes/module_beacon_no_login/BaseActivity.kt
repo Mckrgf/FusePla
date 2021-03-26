@@ -10,16 +10,16 @@ import android.content.pm.PackageManager
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
+import android.support.annotation.NonNull
+import android.support.v4.app.ActivityCompat
+import android.support.v4.content.ContextCompat
 import android.text.TextUtils
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.EditText
 import android.widget.TextView
-import androidx.annotation.NonNull
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
+import android.support.v7.app.AppCompatActivity
 import com.blankj.utilcode.util.ToastUtils
 import com.lzy.okgo.OkGo
 import com.supcon.mes.module_beacon_no_login.customUI.DigitalEditText
@@ -94,10 +94,10 @@ open class BaseActivity : AppCompatActivity() {
             private var mednewaddr: DigitalEditText? = null
             override fun onCreate(savedInstanceState: Bundle?) {
                 super.onCreate(savedInstanceState)
-                setContentView(R.layout.dlg_changenetaddr)
+                setContentView(R.layout.dlg_changenetaddr1)
                 mtvTitle = findViewById(R.id.tv_netsetting_title)
                 medoldaddr = findViewById(R.id.et_oldaddr)
-                mednewaddr = findViewById(R.id.et_newaddr)
+                mednewaddr = findViewById(R.id.et_newaddr1)
                 mTVPort = findViewById(R.id.tv_port)
                 mtvTitle?.text = strTitle
                 medoldaddr?.text = oldAddr

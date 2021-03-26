@@ -1,6 +1,6 @@
 package com.supcon.mes.module_beacon_no_login.powerSetting
 
-import androidx.appcompat.app.AppCompatActivity
+import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.supcon.mes.module_beacon_no_login.BaseActivity
 import com.supcon.supbeacon.R

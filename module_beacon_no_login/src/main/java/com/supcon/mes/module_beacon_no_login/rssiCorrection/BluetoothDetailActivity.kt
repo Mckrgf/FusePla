@@ -13,8 +13,8 @@ import android.view.animation.AnimationUtils
 import android.webkit.WebChromeClient
 import android.webkit.WebSettings
 import android.webkit.WebViewClient
-import androidx.appcompat.app.AlertDialog
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.support.v7.app.AlertDialog
+import android.support.v7.widget.LinearLayoutManager
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.SPUtils
 import com.blankj.utilcode.util.ToastUtils
@@ -30,13 +30,13 @@ import com.supcon.mes.module_beacon_no_login.powerSetting.DeviceControlActivity
 import com.supcon.mes.module_beacon_no_login.ui.GPSActivity
 import com.supcon.mes.module_beacon_no_login.utils.RssiDataUtil
 import com.supcon.supbeacon.*
-import kotlinx.android.synthetic.main.activity_bluetooth_detail.*
+import kotlinx.android.synthetic.main.activity_bluetooth_detail_b.*
 import kotlinx.android.synthetic.main.all_title.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 import org.json.JSONObject
-
+@SuppressLint("MissingPermission")
 class BluetoothDetailActivity : BluetoothConnectionActivity() {
     private val mRssiDataListAdapter = RssiDataListAdapter()
     private var mScanning = false
@@ -57,7 +57,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
     private val webChromeClient: WebChromeClient = object : WebChromeClient() {}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bluetooth_detail)
+        setContentView(R.layout.activity_bluetooth_detail_b)
         bleDevice = intent.getParcelableExtra("device")
         initView()
         initData()
@@ -65,10 +65,11 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
 
     private fun initData() {
         mHandler = Handler()
-        mRssiDataListAdapter.setList(RssiDataUtil.get().createEmptyRssiList())
+        mRssiDataListAdapter.setNewData(RssiDataUtil.get().createEmptyRssiList())
         HttpRequest().getBeacon(this,getSN())
     }
 
+    @SuppressLint("MissingPermission")
     private fun initView() {
         fragment_title_mac.visibility = View.VISIBLE
         fragment_title_mac.text = bleDevice?.address
@@ -144,6 +145,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun goBLEDetail() {
         val intent = Intent(this, DeviceControlActivity::class.java)
         intent.putExtra(DeviceControlActivity.EXTRAS_DEVICE_NAME, bleDevice?.name)
@@ -171,6 +173,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
         }
     }
 
+    @SuppressLint("MissingPermission")
     private fun getSN() :String{
         if (TextUtils.isEmpty( bleDevice?.name)) {
             return  ""
@@ -238,7 +241,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
                     val rssis1 = rssisForAvg.average()
                     LogUtils.d("计算出平均强度值：$rssis1")
                     RssiDataUtil.get().updateRssi(mCurrentPosition,rssis1)
-                    mRssiDataListAdapter.setList(RssiDataUtil.get().mRssiDataList)
+                    mRssiDataListAdapter.setNewData(RssiDataUtil.get().mRssiDataList)
 
                     if (rssisForAvg.size>14 && mScanning) {
                         scanDevice(false)

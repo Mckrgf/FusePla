@@ -15,7 +15,7 @@ import android.text.TextWatcher
 import android.util.Log
 import android.view.View
 import android.view.animation.AnimationUtils
-import androidx.recyclerview.widget.LinearLayoutManager
+import android.support.v7.widget.LinearLayoutManager
 import com.blankj.utilcode.util.AppUtils
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
@@ -76,8 +76,8 @@ class RssiCorrectionActivity : BaseActivity(), View.OnClickListener, RssiCorrect
         mHandler = Handler()
         val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager
         mBluetoothAdapter = bluetoothManager.adapter
-//        mRssiDataListAdapter.setList(RssiDataUtil.get().createEmptyRssiList())
-        mRssiDataListAdapter.setList(RssiDataUtil.get().createMockRssiList())
+//        mRssiDataListAdapter.setNewData(RssiDataUtil.get().createEmptyRssiList())
+        mRssiDataListAdapter.setNewData(RssiDataUtil.get().createMockRssiList())
     }
 
     @SuppressLint("SetTextI18n")
@@ -132,7 +132,7 @@ class RssiCorrectionActivity : BaseActivity(), View.OnClickListener, RssiCorrect
         bt_sort.setOnClickListener {
             if (mDeviceListAdapter.data.size > 0) {
                 val data = CalculateUtil.sortBLEDevice(mDeviceListAdapter.data)
-                mDeviceListAdapter.setList(data)
+                mDeviceListAdapter.setNewData(data)
             }
         }
     }
