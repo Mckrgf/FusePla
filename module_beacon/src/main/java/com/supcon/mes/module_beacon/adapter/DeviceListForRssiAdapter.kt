@@ -52,7 +52,7 @@ class DeviceListForRssiAdapter(rssiCorrectionActivity: RssiCorrectionActivity) :
             holder.getView<ImageView>(R.id.iv_map).setImageResource(R.mipmap.iv_map_b)
         }
 
-        holder.getView<TextView>(R.id.tv_address).text = "信号强度：" + item.rssi
+        holder.getView<TextView>(R.id.tv_address).text = mContext.resources.getString(R.string.rssi) + item.rssi
 
         holder.getView<ImageView>(R.id.iv_map).setOnClickListener {
             val device = data[holder.adapterPosition].device

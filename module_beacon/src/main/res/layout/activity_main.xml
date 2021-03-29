@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/bt_sort"
-        android:text="排序"/>
+        android:text="@string/sort"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/rv_devices"

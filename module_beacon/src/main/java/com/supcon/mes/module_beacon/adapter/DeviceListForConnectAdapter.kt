@@ -59,7 +59,7 @@ class DeviceListForConnectAdapter(activity: DeviceListForScanActivity) : BaseQui
             }
         }
         holder.getView<TextView>(R.id.tv_device_bond_state).text = bondState
-        holder.getView<TextView>(R.id.tv_address).text = "信号强度：" + item.rssi
+        holder.getView<TextView>(R.id.tv_address).text = mContext.resources.getString(R.string.rssi) + item.rssi
         holder.getView<TextView>(R.id.tv_device_bond_state).text = bondState
     }
 

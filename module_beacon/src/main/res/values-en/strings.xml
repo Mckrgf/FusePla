@@ -38,11 +38,23 @@
     <string name="unknown_service">unknown service</string>
 
     <!-- Menu items -->
-    <string name="menu_connect">连接</string>
-    <string name="menu_disconnect">断开连接</string>
-    <string name="menu_scan">扫描</string>
-    <string name="menu_stop">停止</string>
+    <string name="menu_connect">menu_connect</string>
+    <string name="menu_disconnect">menu_disconnect</string>
+    <string name="menu_scan">menu_scan</string>
+    <string name="menu_stop">menu_stop</string>
     <string name="click_choose_coor">click to choose position</string>
-    <string name="only_can_abc">只能修改信号强度信息和广播间隔信息,请先获取信号强度的值后编辑，点击提交</string>
+    <string name="only_can_abc">Only the signal strength information and broadcast interval information can be modified. Please obtain the signal strength value before editing and click Submit
+</string>
 
+    <string name="network_setting">network setting</string>
+
+    <string name="cancel">cancel</string>
+    <string name="confirm">confirm</string>
+    <string name="logout">logout</string>
+    <string name="sort">sort</string>
+    <string name="rssi">rssi</string>
+    <string name="device_detail">device detail</string>
+    <string name="floor_info">floor</string>
+    <string name="coordinate">coordinate</string>
+    <string name="rssi_m">rssi 1m</string>
 </resources>

@@ -26,7 +26,7 @@ class HomeActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         iv_setting.setOnClickListener {
-            showNetAddrDlg(this, "网络配置", NetUtil().getIP(), NetUtil().getPort())
+            showNetAddrDlg(this, resources.getString(R.string.network_setting), NetUtil().getIP(), NetUtil().getPort())
         }
 
         initFunction()

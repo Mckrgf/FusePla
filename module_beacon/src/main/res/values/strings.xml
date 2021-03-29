@@ -44,4 +44,18 @@
     <string name="click_choose_coor">点击选择位置</string>
     <string name="only_can_abc">只能修改信号强度信息、广播间隔、设备ID,请先获取信号强度的值后编辑，点击提交</string>
 
+    <string name="network_setting">网络配置</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="logout">注销</string>
+    <string name="sort">排序</string>
+    <string name="rssi">信号强度</string>
+    <string name="device_detail">设备详情</string>
+    <string name="floor_info">楼层</string>
+    <string name="coordinate">坐标</string>
+    <string name="rssi_m">信号强度</string>
+
+
+
 </resources>
