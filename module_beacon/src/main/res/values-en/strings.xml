@@ -68,6 +68,20 @@
 
     <string name="binding_bluetooth">binding bluetooth device</string>
     <string name="get">get info</string>
-    <string name="tips">Warm tips: \n support to modify signal strength, broadcast interval and device ID. \n the signal strength is divided into 0-12, and the transmission is larger and larger. \n The broadcasting interval is 10-200, which means that the transmitting interval is 100 MS-2000 Ms. \n the operation steps are as follows: \n first obtain, then edit, and then submit</string>
+    <string name="tips">Warm tips: \n support to modify rssi, broadcast interval and device ID. \n the signal strength is divided into 0-12, and the transmission is larger and larger. \n The broadcasting interval is 10-200, which means that the transmitting interval is 100 MS-2000 Ms. \n the operation steps are as follows: \n first obtain, then edit, and then submit</string>
+
+    <string name="stop_scan">stop scan</string>
+    <string name="scanning">scanning</string>
+    <string name="tip">tip</string>
+    <string name="has_saved">has saved</string>
+    <string name="lan">latitude</string>
+    <string name="lon">longitude</string>
+    <string name="height">height</string>
+    <string name="fail_to_get_ble_info">fail to get ble info</string>
+    <string name="success_to_get_ble_info">success to get ble info</string>
+    <string name="fail_to_update_ble_info">fail to update ble info</string>
+    <string name="success_to_update_ble_info">success to update ble info</string>
+    <string name="load_error">load error</string>
+    <string name="no_coordinate_was_chose">no coordinate was chose</string>
 
 </resources>

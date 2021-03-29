@@ -68,6 +68,20 @@
     <string name="get">获取</string>
     <string name="tips">温馨提示：\n支持修改信号强度、广播间隔、设备ID。\n信号强度分为0-12，发射越来越大。\n广播间隔分为10-200，代表发射间隔为100ms-2000ms \n操作步骤：\n先获取，后编辑，再提交</string>
 
+    <string name="stop_scan">扫描关闭</string>
+    <string name="scanning">正在扫描</string>
+    <string name="tip">提示</string>
+    <string name="has_saved">保存完成</string>
+    <string name="lan">纬度</string>
+    <string name="lon">经度</string>
+    <string name="height">高度</string>
+    <string name="fail_to_get_ble_info">信标信息获取失败</string>
+    <string name="success_to_get_ble_info">信标信息获取成功</string>
+    <string name="fail_to_update_ble_info">信标信息更新失败</string>
+    <string name="success_to_update_ble_info">信标信息更新成功</string>
+    <string name="load_error">显示异常</string>
+    <string name="no_coordinate_was_chose">没有选中任何坐标</string>
+
 
 
 </resources>

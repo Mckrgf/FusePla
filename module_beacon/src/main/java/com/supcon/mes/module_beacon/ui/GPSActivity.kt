@@ -64,7 +64,7 @@ class GPSActivity : BaseWebActivity() {
             function.onCallBack("submitFromWeb exe, response data from Java")
             val gpsCoordinate = Gson().fromJson(data, JSGPSCoordinate::class.java)
             coordinatesBean = gpsCoordinate.param?.coordinates?.get(0)
-            ToastUtils.showShort(coordinatesBean?.hei.toString() + "米高度" + ",坐标为:" + coordinatesBean?.lon + "," + coordinatesBean?.lat)
+            ToastUtils.showShort(coordinatesBean?.hei.toString() + resources.getString(R.string.meter) + ", ${resources.getString(R.string.coordinate)}:" + coordinatesBean?.lon + "," + coordinatesBean?.lat)
             tv_coordinate.text = "x：${coordinatesBean?.lat} y: ${coordinatesBean?.lon} z: ${coordinatesBean?.hei}"
             bt_commit.isEnabled = true
         }
@@ -132,7 +132,7 @@ class GPSActivity : BaseWebActivity() {
 
     private fun backToMain(coordinatesBean: JSGPSCoordinate.ParamBean.CoordinatesBean?) {
         if (null == coordinatesBean) {
-            ToastUtils.showShort("没有选中任何坐标")
+            ToastUtils.showShort(resources.getString(R.string.no_coordinate_was_chose))
             finish()
         }
         intent.putExtra(COORDINATE_KEY, coordinatesBean)

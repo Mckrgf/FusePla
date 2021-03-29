@@ -171,8 +171,8 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
             HttpRequest().getBeacon(this, getSN())
         }
         alertDialog = AlertDialog.Builder(this)
-            .setTitle("提示")
-            .setMessage("正在扫描")
+            .setTitle(resources.getString(R.string.tip))
+            .setMessage(resources.getString(R.string.scanning))
             .setCancelable(false)
             .create()
 
@@ -218,7 +218,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
                             var templateS = mednewaddr?.text.toString()
                             var templateJ = Gson().fromJson(templateS,JsonArray::class.java)
                             RssiDataUtil.get().setTemplate(templateS)
-                            ToastUtils.showShort("保存完成")
+                            ToastUtils.showShort(resources.getString(R.string.has_saved))
                             dismiss()
                         }
                         R.id.btn_cancel -> {
@@ -247,7 +247,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
                 when (resultCode) {
                     RESPONSE_GET_COORDINATE -> {
                         currentCoordinate = data?.getSerializableExtra(COORDINATE_KEY) as JSGPSCoordinate.ParamBean.CoordinatesBean
-                        et_gps_content.setText("纬度：${currentCoordinate?.lat} 经度: ${currentCoordinate?.lon} 高度: ${currentCoordinate?.hei}")
+                        et_gps_content.setText("${resources.getString(R.string.lan)}：${currentCoordinate?.lat} ${resources.getString(R.string.lon)}: ${currentCoordinate?.lon} 高度: ${currentCoordinate?.hei}")
                     }
                 }
             }
@@ -302,7 +302,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
             iv_refresh.clearAnimation()
             mScanning = false
             mBluetoothAdapter!!.stopLeScan(mLeScanCallback)
-            ToastUtils.showShort("扫描关闭")
+            ToastUtils.showShort(resources.getString(R.string.stop_scan))
             mHandler!!.removeCallbacksAndMessages(null);
         }
         invalidateOptionsMenu()
@@ -311,7 +311,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
     private val mLeScanCallback = BluetoothAdapter.LeScanCallback { device, rssi, _ ->
         runOnUiThread {
             if (device.address == bleDevice?.address) {
-                alertDialog?.setMessage("正在扫描：$rssi")
+                alertDialog?.setMessage(resources.getString(R.string.scanning) + ": $rssi")
                 LogUtils.d("获取到强度值：$rssi")
                 rssis.add(rssi)
                 if (rssis.size > 10) {
@@ -358,7 +358,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
                                 val x = data["x"].toString()
                                 val y = data["y"].toString()
                                 val z = data["z"].toString()
-                                et_gps_content.setText("纬度：$x 经度: $y 高度: $z")
+                                et_gps_content.setText("${resources.getString(R.string.lan)}：$x ${resources.getString(R.string.lan)}: $y ${resources.getString(R.string.lan)}: $z")
                                 var p0 = data["p0"].toString().toDouble()
 //                                p0 -= 127
                                 et_p0.setText(p0.toString())
@@ -433,7 +433,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
                                 HttpRequest().addBeacon(this, jsonObject)
                             }
                             else -> {
-                                ToastUtils.showLong("信标信息获取失败" + event.msg)
+                                ToastUtils.showLong(resources.getString(R.string.fail_to_get_ble_info) + event.msg)
                             }
                         }
                     }
@@ -442,21 +442,21 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
             HttpRequest.REQUEST_CODE_UPDATE_BEACON -> {
                 when (event.code) {
                     200 -> {
-                        ToastUtils.showLong("信标信息更新成功")
+                        ToastUtils.showLong(resources.getString(R.string.success_to_get_ble_info))
                         getBeaconState = 0
                         HttpRequest().getBeacon(this, getSN())
                         saveDataToSP()
                     }
-                    else -> ToastUtils.showLong("信标信息更新失败" + event.msg)
+                    else -> ToastUtils.showLong(resources.getString(R.string.fail_to_update_ble_info) + event.msg)
                 }
             }
             HttpRequest.REQUEST_CODE_ADD_BEACON -> {
                 when (event.code) {
                     200 -> {
-                        ToastUtils.showLong("信标信息添加成功")
+                        ToastUtils.showLong(resources.getString(R.string.success_to_update_ble_info))
                         saveDataToSP()
                     }
-                    else -> ToastUtils.showLong("信标信息更新失败" + event.msg)
+                    else -> ToastUtils.showLong(resources.getString(R.string.fail_to_update_ble_info) + event.msg)
                 }
             }
         }

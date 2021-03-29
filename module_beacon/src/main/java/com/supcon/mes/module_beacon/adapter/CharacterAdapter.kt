@@ -1,19 +1,19 @@
 package com.supcon.mes.module_beacon.adapter
 
-import android.bluetooth.BluetoothDevice
+import android.os.LocaleList
 import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
 import android.text.method.DigitsKeyListener
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
-import com.blankj.utilcode.util.LogUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.google.gson.internal.LinkedTreeMap
 import com.supcon.mes.R
 import com.supcon.mes.module_beacon.powerSetting.DeviceControlActivity
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
 
 /**
  * @author : yaobing
@@ -25,7 +25,32 @@ class CharacterAdapter(activity: DeviceControlActivity) : BaseQuickAdapter<HashM
     private val mActivity = activity
     private var dataAll: ArrayList<HashMap<String, String>> = ArrayList()
     override fun convert(holder: BaseViewHolder, item: HashMap<String, String>) {
+
+        val locale: LocaleList = mContext.resources.configuration.locales
+        if (locale[0].toString().contains("en_")) {
+            when(item["NAME"]) {
+                "信号强度" -> {
+                    item["NAME"] = "rssi"
+                }
+                "广播间隔" -> {
+                    item["NAME"] = "broadcast interval"
+                }
+                "单位距离RSSI" -> {
+                    item["NAME"] = "rssi/m"
+                }
+                "设备ID" -> {
+                    item["NAME"] = "device ID"
+                }
+                "UUID" -> {
+                    item["NAME"] = "UUID"
+                }
+                "密码" -> {
+                    item["NAME"] = "password"
+                }
+            }
+        }
         holder.getView<TextView>(R.id.tv_character_name).text = item["NAME"]
+
         var aaa = item["VALUE"]?.trim()
         aaa = aaa?.replace(" ","")
 
