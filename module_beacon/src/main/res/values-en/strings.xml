@@ -86,5 +86,8 @@
     <string name="binding">binding</string>
     <string name="Unbound">Unbound</string>
     <string name="already_bound">already bound</string>
+    <string name="noise">noise</string>
+    <string name="update_time">update time</string>
+    <string name="delete">delete</string>
 
 </resources>

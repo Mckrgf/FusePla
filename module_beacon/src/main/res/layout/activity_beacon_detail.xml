@@ -40,7 +40,7 @@
         android:layout_marginLeft="@dimen/x24"
         android:layout_marginTop="@dimen/y15"
         android:layout_marginBottom="@dimen/y10"
-        android:text="设备详情"
+        android:text="@string/device_detail"
         android:textColor="@color/text_gray_7"
         android:textSize="@dimen/x24" />
 
@@ -56,7 +56,7 @@
             android:layout_marginLeft="@dimen/x24"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="楼层"
+            android:text="@string/floor_info"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -66,7 +66,7 @@
             android:layout_marginLeft="@dimen/x76"
             android:layout_weight="4"
             android:background="@null"
-            android:hint="楼层信息"
+            android:hint="@string/floor_info"
             android:textSize="@dimen/x30" />
 
     </LinearLayout>
@@ -88,7 +88,7 @@
             android:layout_marginLeft="@dimen/x24"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="坐标x"
+            android:text="@string/lon"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -98,7 +98,7 @@
             android:layout_marginLeft="@dimen/x76"
             android:layout_weight="4"
             android:background="@null"
-            android:hint="坐标信息"
+            android:hint="@string/lon"
             android:textSize="@dimen/x30" />
 
     </LinearLayout> <LinearLayout
@@ -113,7 +113,7 @@
             android:layout_marginLeft="@dimen/x24"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="坐标y"
+            android:text="@string/lan"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -123,7 +123,7 @@
             android:layout_marginLeft="@dimen/x76"
             android:layout_weight="4"
             android:background="@null"
-            android:hint="坐标信息"
+            android:hint="@string/lan"
             android:textSize="@dimen/x30" />
 
     </LinearLayout> <LinearLayout
@@ -138,7 +138,7 @@
             android:layout_marginLeft="@dimen/x24"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="坐标z"
+            android:text="@string/height"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -148,7 +148,7 @@
             android:layout_marginLeft="@dimen/x76"
             android:layout_weight="4"
             android:background="@null"
-            android:hint="坐标信息"
+            android:hint="@string/height"
             android:textSize="@dimen/x30" />
 
     </LinearLayout>
@@ -165,7 +165,7 @@
             android:layout_marginLeft="@dimen/x24"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="噪声"
+            android:text="@string/noise"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -175,7 +175,7 @@
             android:layout_marginLeft="@dimen/x76"
             android:layout_weight="4"
             android:background="@null"
-            android:hint="噪声音系"
+            android:hint="noise"
             android:enabled="false"
             android:textSize="@dimen/x30" />
 
@@ -193,7 +193,7 @@
             android:layout_marginLeft="@dimen/x24"
             android:layout_weight="1"
             android:gravity="center_vertical"
-            android:text="P0"
+            android:text="@string/rssi_m"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -204,7 +204,7 @@
             android:layout_marginLeft="@dimen/x76"
             android:layout_weight="4"
             android:background="@null"
-            android:hint="一米坐标"
+            android:hint="@string/rssi_m"
             android:textSize="@dimen/x30" />
 
     </LinearLayout>
@@ -232,7 +232,7 @@
             android:layout_marginLeft="@dimen/x76"
             android:layout_weight="4"
             android:background="@null"
-            android:hint="更新时间"
+            android:hint="@string/update_time"
             android:textSize="@dimen/x30" />
 
     </LinearLayout>
@@ -244,6 +244,6 @@
         android:background="@drawable/bg_button_red_round"
         android:id="@+id/bt_delete"
         android:textColor="@color/white"
-        android:text="删除"/>
+        android:text="@string/delete"/>
 
 </LinearLayout>

@@ -84,6 +84,9 @@
     <string name="binding">正在绑定</string>
     <string name="Unbound">未绑定</string>
     <string name="already_bound">已经绑定</string>
+    <string name="noise">噪声</string>
+    <string name="update_time">更新时间</string>
+    <string name="delete">删除</string>
 
 
 
