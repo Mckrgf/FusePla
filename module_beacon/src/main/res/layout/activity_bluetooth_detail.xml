@@ -143,7 +143,7 @@
             android:layout_marginLeft="@dimen/x24"
             android:layout_marginTop="@dimen/y15"
             android:layout_marginBottom="@dimen/y10"
-            android:text="影响因子"
+            android:text="@string/impact_factors"
             android:textColor="@color/text_gray_7"
             android:textSize="@dimen/x24" />
 
@@ -193,7 +193,7 @@
             android:layout_height="@dimen/y60"
             android:layout_weight="1"
             android:layout_margin="@dimen/x10"
-            android:text="绑定"
+            android:text="@string/bind"
             android:textColor="@color/white"
             android:background="@drawable/bg_button_blue_round"
             android:id="@+id/bt_bind"/>
@@ -202,7 +202,7 @@
             android:layout_height="@dimen/y60"
             android:layout_weight="1"
             android:layout_margin="@dimen/x10"
-            android:text="信标属性"
+            android:text="@string/ble_info"
             android:textColor="@color/white"
             android:background="@drawable/bg_button_blue_round"
             android:id="@+id/bt_detail"/>
@@ -211,7 +211,7 @@
             android:layout_height="@dimen/y60"
             android:layout_weight="1"
             android:layout_margin="@dimen/x10"
-            android:text="解绑"
+            android:text="@string/un_bind"
             android:textColor="@color/white"
             android:background="@drawable/bg_button_blue_round"
             android:id="@+id/bt_unBind"/>

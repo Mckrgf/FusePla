@@ -137,7 +137,7 @@
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:id="@+id/bt_calculate"
-            android:text="计算" />
+            android:text="@string/calculate" />
 
         <Button
             android:id="@+id/bt_commit"

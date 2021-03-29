@@ -57,4 +57,17 @@
     <string name="floor_info">floor</string>
     <string name="coordinate">coordinate</string>
     <string name="rssi_m">rssi 1m</string>
+
+    <string name="impact_factors">impact actors</string>
+    <string name="distance">distance</string>
+    <string name="meter">meter</string>
+    <string name="calculate">calculate</string>
+    <string name="ble_info">ble_info</string>
+    <string name="bind">bind</string>
+    <string name="un_bind">un_bind</string>
+
+    <string name="binding_bluetooth">binding bluetooth device</string>
+    <string name="get">get info</string>
+    <string name="tips">Warm tips: \n support to modify signal strength, broadcast interval and device ID. \n the signal strength is divided into 0-12, and the transmission is larger and larger. \n The broadcasting interval is 10-200, which means that the transmitting interval is 100 MS-2000 Ms. \n the operation steps are as follows: \n first obtain, then edit, and then submit</string>
+
 </resources>

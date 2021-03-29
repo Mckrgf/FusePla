@@ -56,6 +56,18 @@
     <string name="coordinate">坐标</string>
     <string name="rssi_m">信号强度</string>
 
+    <string name="impact_factors">影响因子</string>
+    <string name="distance">距离</string>
+    <string name="meter">米</string>
+    <string name="calculate">计算</string>
+    <string name="ble_info">信标属性</string>
+    <string name="bind">绑定</string>
+    <string name="un_bind">解绑</string>
+
+    <string name="binding_bluetooth">正在连接蓝牙</string>
+    <string name="get">获取</string>
+    <string name="tips">温馨提示：\n支持修改信号强度、广播间隔、设备ID。\n信号强度分为0-12，发射越来越大。\n广播间隔分为10-200，代表发射间隔为100ms-2000ms \n操作步骤：\n先获取，后编辑，再提交</string>
+
 
 
 </resources>

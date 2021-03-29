@@ -134,6 +134,5 @@
         android:layout_height="wrap_content"
         android:textSize="@dimen/x40"
         android:textColor="@color/black"
-        android:text="温馨提示：\n支持修改信号强度、广播间隔、设备ID。\n信号强度分为0-12，发射越来越大。\n广播间隔分为10-200，代表发射间隔为100ms-2000ms \n操作步骤：\n先获取，后编辑，再提交"/>
-
+        android:text="@string/tips"/>
 </LinearLayout>

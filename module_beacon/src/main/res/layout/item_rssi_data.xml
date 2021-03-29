@@ -19,15 +19,17 @@
             android:text="1" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
             android:layout_marginLeft="@dimen/x23"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="距离"
+                android:text="@string/distance"
                 android:textSize="@dimen/x30" />
 
             <EditText
@@ -36,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/x30"
                 android:background="@null"
-                android:hint="距离"
+                android:hint="@string/distance"
                 android:inputType="numberDecimal"
                 android:textSize="@dimen/x30" />
 
@@ -44,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/x30"
-                android:text="米"
+                android:text="@string/meter"
                 android:textSize="@dimen/x30" />
         </LinearLayout>
 
@@ -58,8 +60,8 @@
             android:background="@color/gray_line"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"            android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
@@ -85,24 +87,34 @@
             android:layout_height="1dp"
             android:layout_weight="1" />
 
-        <Button
-            android:layout_width="@dimen/x100"
-            android:layout_height="@dimen/y60"
-            android:background="@drawable/bg_button_blue_round"
-            android:textColor="@color/white"
-            android:layout_marginRight="@dimen/x15"
-            android:text="扫描"
-            android:id="@+id/bt_scan"
-            android:textSize="@dimen/x30" />
-        <Button
-            android:layout_width="@dimen/x100"
-            android:layout_height="@dimen/y60"
-            android:background="@drawable/bg_button_blue_round"
-            android:textColor="@color/white"
-            android:layout_marginRight="@dimen/x15"
-            android:text="计算"
-            android:id="@+id/bt_calculate"
-            android:textSize="@dimen/x30" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1"            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/y60"
+                android:background="@drawable/bg_button_blue_round"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/x15"
+                android:text="@string/menu_scan"
+                android:id="@+id/bt_scan"
+                android:textSize="@dimen/x20" />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/y60"
+                android:background="@drawable/bg_button_blue_round"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/x15"
+                android:text="@string/calculate"
+                android:id="@+id/bt_calculate"
+                android:textSize="@dimen/x20" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <include
