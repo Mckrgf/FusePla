@@ -186,7 +186,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
             if (bleBonded(myBluetoothDevice.device)) {
                 //底部弹窗解绑设备
                 LogUtils.d("弹窗解绑")
-                showBottomDialog("解绑", dialogAnimationUp)
+                showBottomDialog(resources.getString(R.string.un_bind), dialogAnimationUp)
             } else {
                 //底部弹窗绑定设备
                 LogUtils.d("弹窗绑定")

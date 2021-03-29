@@ -54,7 +54,6 @@ import kotlin.collections.HashMap
 open class BluetoothDetailActivity : BluetoothConnectionActivity() {
     private val mRssiDataListAdapter = RssiDataListAdapter()
     private var mScanning = false
-    private var bleDevice: BluetoothDevice? = null
     private var mHandler: Handler? = null
     private var scanTime: Long = 0
     private var mCurrentPosition: Int = 0
@@ -247,7 +246,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
                 when (resultCode) {
                     RESPONSE_GET_COORDINATE -> {
                         currentCoordinate = data?.getSerializableExtra(COORDINATE_KEY) as JSGPSCoordinate.ParamBean.CoordinatesBean
-                        et_gps_content.setText("${resources.getString(R.string.lan)}：${currentCoordinate?.lat} ${resources.getString(R.string.lon)}: ${currentCoordinate?.lon} 高度: ${currentCoordinate?.hei}")
+                        et_gps_content.setText("${resources.getString(R.string.lan)}：${currentCoordinate?.lat} ${resources.getString(R.string.lon)}: ${currentCoordinate?.lon} ${resources.getString(R.string.height)}: ${currentCoordinate?.hei}")
                     }
                 }
             }
