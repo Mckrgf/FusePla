@@ -87,6 +87,7 @@
     <string name="noise">噪声</string>
     <string name="update_time">更新时间</string>
     <string name="delete">删除</string>
+    <string name="success_to_unbind">解除绑定成功</string>
 
 
 

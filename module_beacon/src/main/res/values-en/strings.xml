@@ -89,5 +89,6 @@
     <string name="noise">noise</string>
     <string name="update_time">update time</string>
     <string name="delete">delete</string>
+    <string name="success_to_unbind">success to unbind device</string>
 
 </resources>

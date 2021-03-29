@@ -78,5 +78,6 @@
     <string name="binding">正在绑定</string>
     <string name="Unbound">未绑定</string>
     <string name="already_bound">已经绑定</string>
+    <string name="success_to_unbind">解除绑定成功</string>
 
 </resources>

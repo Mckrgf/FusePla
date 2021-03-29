@@ -67,7 +67,7 @@ open class BluetoothConnectionActivity : BaseActivity() {
 
     fun removeBond(bleDevice : BluetoothDevice) {
         if (ClsUtils.removeBond(BluetoothDevice::class.java, bleDevice)) {
-            ToastUtils.showLong("解除绑定成功")
+            ToastUtils.showLong(resources.getString(R.string.success_to_unbind))
             bt_bind.visibility = View.VISIBLE
             isBonded = false
         } else {

@@ -153,7 +153,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
             when (currentDevice?.bondState) {
                 BluetoothDevice.BOND_BONDED -> {
                     if (ClsUtils.removeBond(BluetoothDevice::class.java, currentDevice)) {
-                        ToastUtils.showLong("解除绑定成功")
+                        ToastUtils.showLong(resources.getString(R.string.success_to_unbind))
                         mDeviceListAdapter.notifyItemChanged(currentDevicePosition)
                     } else {
                         ToastUtils.showLong("该系统不支持在app内解除蓝牙绑定，请自行解绑")

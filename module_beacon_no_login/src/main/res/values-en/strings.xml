@@ -86,5 +86,6 @@
     <string name="binding">binding</string>
     <string name="Unbound">Unbound</string>
     <string name="already_bound">already bound</string>
+    <string name="success_to_unbind">success to unbind device</string>
 
 </resources>
