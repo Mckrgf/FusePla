@@ -46,15 +46,15 @@ class DeviceListForConnectAdapter(activity: DeviceListForScanActivity) : BaseQui
         var canBeBonded = false
         when (item.device.bondState) {
             BluetoothDevice.BOND_BONDED -> {
-                bondState = "已经绑定"
+                bondState = mContext.resources.getString(R.string.already_bound)
                 canBeBonded = false
             }
             BluetoothDevice.BOND_BONDING -> {
-                bondState = "正在绑定..."
+                bondState = mContext.resources.getString(R.string.binding)
                 canBeBonded= false
             }
             BluetoothDevice.BOND_NONE -> {
-                bondState = "未绑定"
+                bondState = mContext.resources.getString(R.string.Unbound)
                 canBeBonded = true
             }
         }

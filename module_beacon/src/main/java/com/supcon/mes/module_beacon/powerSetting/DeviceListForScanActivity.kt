@@ -79,7 +79,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
         mwaitdlg?.isIndeterminate = false //循环滚动
 
         mwaitdlg?.setProgressStyle(ProgressDialog.STYLE_SPINNER)
-        mwaitdlg?.setMessage("正在连接蓝牙")
+        mwaitdlg?.setMessage(resources.getString(R.string.binding_bluetooth))
         mwaitdlg?.setCancelable(false) //false不能取消显示，true可以取消显示
 
 
@@ -190,7 +190,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
             } else {
                 //底部弹窗绑定设备
                 LogUtils.d("弹窗绑定")
-                showBottomDialog("绑定", dialogAnimationUp)
+                showBottomDialog(resources.getString(R.string.bind), dialogAnimationUp)
             }
             true
         }

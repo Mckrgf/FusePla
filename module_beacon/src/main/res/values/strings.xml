@@ -81,6 +81,9 @@
     <string name="success_to_update_ble_info">信标信息更新成功</string>
     <string name="load_error">显示异常</string>
     <string name="no_coordinate_was_chose">没有选中任何坐标</string>
+    <string name="binding">正在绑定</string>
+    <string name="Unbound">未绑定</string>
+    <string name="already_bound">已经绑定</string>
 
 
 

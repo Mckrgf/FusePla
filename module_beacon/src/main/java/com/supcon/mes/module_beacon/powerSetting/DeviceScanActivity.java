@@ -69,7 +69,7 @@ public class DeviceScanActivity extends ListActivity {
         mwaitdlg = new ProgressDialog(this);
         mwaitdlg.setIndeterminate(false);//循环滚动
         mwaitdlg.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-        mwaitdlg.setMessage("正在连接蓝牙");
+        mwaitdlg.setMessage(getResources().getString(R.string.binding_bluetooth));
         mwaitdlg.setCancelable(true);//false不能取消显示，true可以取消显示
 
         // Use this check to determine whether BLE is supported on the device.  Then you can

@@ -80,7 +80,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
         mwaitdlg?.isIndeterminate = false //循环滚动
 
         mwaitdlg?.setProgressStyle(ProgressDialog.STYLE_SPINNER)
-        mwaitdlg?.setMessage("正在连接蓝牙")
+        mwaitdlg?.setMessage(resources.getString(R.string.binding_bluetooth))
         mwaitdlg?.setCancelable(false) //false不能取消显示，true可以取消显示
         iv_refresh.visibility = View.VISIBLE
         tv_search.setOnClickListener(this)

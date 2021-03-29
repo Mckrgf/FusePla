@@ -15,6 +15,7 @@ import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
 import com.supcon.mes.module_beacon_no_login.event.BleReceiverEvent
 import com.supcon.mes.module_beacon_no_login.utils.ClsUtils
+import com.supcon.supbeacon.R
 import kotlinx.android.synthetic.main.activity_bluetooth_detail_b.*
 import org.greenrobot.eventbus.EventBus
 
@@ -33,7 +34,7 @@ open class BluetoothConnectionActivity : BaseActivity() {
         mwaitdlg = ProgressDialog(this)
         mwaitdlg?.isIndeterminate = false //循环滚动
         mwaitdlg?.setProgressStyle(ProgressDialog.STYLE_SPINNER)
-        mwaitdlg?.setMessage("正在连接蓝牙")
+        mwaitdlg?.setMessage(resources.getString(R.string.binding_bluetooth))
         mwaitdlg?.setCancelable(false) //false不能取消显示，true可以取消显示
 
         val bluetoothManager = getSystemService(Context.BLUETOOTH_SERVICE) as BluetoothManager

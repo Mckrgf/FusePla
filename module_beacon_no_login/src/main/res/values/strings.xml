@@ -37,4 +37,46 @@
     <string name="menu_stop">停止</string>
     <string name="click_choose_coor">点击选择位置</string>
     <string name="only_can_abc">只能修改信号强度信息、广播间隔信息、设备ID,请先获取信号强度的值后编辑，点击提交</string>
+
+    <string name="network_setting">网络配置</string>
+
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    <string name="logout">注销</string>
+    <string name="sort">排序</string>
+    <string name="rssi">信号强度</string>
+    <string name="device_detail">设备详情</string>
+    <string name="floor_info">楼层</string>
+    <string name="coordinate">坐标</string>
+    <string name="rssi_m">信号强度</string>
+
+    <string name="impact_factors">影响因子</string>
+    <string name="distance">距离</string>
+    <string name="meter">米</string>
+    <string name="calculate">计算</string>
+    <string name="ble_info">信标属性</string>
+    <string name="bind">绑定</string>
+    <string name="un_bind">解绑</string>
+
+    <string name="binding_bluetooth">正在连接蓝牙</string>
+    <string name="get">获取</string>
+    <string name="tips">温馨提示：\n支持修改信号强度、广播间隔、设备ID。\n信号强度分为0-12，发射越来越大。\n广播间隔分为10-200，代表发射间隔为100ms-2000ms \n操作步骤：\n先获取，后编辑，再提交</string>
+
+    <string name="stop_scan">扫描关闭</string>
+    <string name="scanning">正在扫描</string>
+    <string name="tip">提示</string>
+    <string name="has_saved">保存完成</string>
+    <string name="lan">纬度</string>
+    <string name="lon">经度</string>
+    <string name="height">高度</string>
+    <string name="fail_to_get_ble_info">信标信息获取失败</string>
+    <string name="success_to_get_ble_info">信标信息获取成功</string>
+    <string name="fail_to_update_ble_info">信标信息更新失败</string>
+    <string name="success_to_update_ble_info">信标信息更新成功</string>
+    <string name="load_error">显示异常</string>
+    <string name="no_coordinate_was_chose">没有选中任何坐标</string>
+    <string name="binding">正在绑定</string>
+    <string name="Unbound">未绑定</string>
+    <string name="already_bound">已经绑定</string>
+
 </resources>
