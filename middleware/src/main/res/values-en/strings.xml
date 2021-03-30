@@ -89,5 +89,5 @@
     <string name="login_search_radius">Please set the radius of search</string>
     <string name="login_search_radius_hint">Zero means unlimited search radius</string>
     <string name="login_user_name">User Name</string>
-    <string name="choose_app_mode">选择APP模式</string>
+    <string name="choose_app_mode">please choose app mode</string>
 </resources>

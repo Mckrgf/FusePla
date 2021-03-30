@@ -22,7 +22,7 @@ class HomeActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         iv_setting.setOnClickListener {
-            showNetAddrDlg(this, "网络配置", NetUtil().getIP(), NetUtil().getPort())
+            showNetAddrDlg(this, resources.getString(R.string.network_setting), NetUtil().getIP(), NetUtil().getPort())
         }
 
         initFunction()
@@ -41,9 +41,9 @@ class HomeActivity : BaseActivity() {
 
     private fun initFunction() {
         val functions = ArrayList<Function>()
-        functions.add(Function("rssi收集",R.mipmap.function_rssi_collect))
-        functions.add(Function("信标设置",R.mipmap.function_beacon_setting))
-        functions.add(Function("信标管理", R.mipmap.function_beacon_manage))
+        functions.add(Function(resources.getString(R.string.RSSI_COLLECT),R.mipmap.function_rssi_collect))
+        functions.add(Function(resources.getString(R.string.BEACON_SETTING),R.mipmap.function_beacon_setting))
+        functions.add(Function(resources.getString(R.string.RSSI_COLLECT), R.mipmap.function_beacon_manage))
         functions.add(Function("",R.mipmap.function_empty))
         rv_function.layoutManager = GridLayoutManager(this,4)
         rv_function.adapter = mFunctionListAdapter

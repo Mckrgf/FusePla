@@ -213,7 +213,7 @@ class RssiCorrectionActivity : BaseActivity(), View.OnClickListener, RssiCorrect
                 if (mScanning) mDeviceListAdapter.clear()
             }
             R.id.bt_ip_setting -> {
-                showNetAddrDlg(this, "网络配置", NetUtil().getIP(), NetUtil().getPort())
+                showNetAddrDlg(this, resources.getString(R.string.network_setting), NetUtil().getIP(), NetUtil().getPort())
             }
             R.id.bt_calculate -> {
                 val n = RssiDataUtil.get().getN()

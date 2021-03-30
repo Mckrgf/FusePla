@@ -86,9 +86,13 @@
     <string name="binding">binding</string>
     <string name="Unbound">Unbound</string>
     <string name="already_bound">already bound</string>
+    <string name="noise">noise</string>
+    <string name="update_time">update time</string>
+    <string name="delete">delete</string>
     <string name="success_to_unbind">success to unbind device</string>
     <string name="please_input_new_server_ip">please input new server ip</string>
     <string name="old_server_ip">old server ip</string>
     <string name="port_setting">port setting</string>
+
 
 </resources>
