@@ -18,9 +18,9 @@ class CustomDialogFragment : DialogFragment() {
         return activity?.let {
             // Use the Builder class for convenient dialog construction
             val builder = AlertDialog.Builder(it)
-            builder.setMessage("是否选择该模式启动app？")
+            builder.setMessage(resources.getString(R.string.confirm_to_choose_this_mode))
                 .setPositiveButton(
-                    "确定"
+                    resources.getString(R.string.confirm)
                 ) { dialog, id ->
                     SPUtils.getInstance().put(MainActivity.SP_KEY_APP_MODE,tag!!)
                     var activity : MainActivity = activity as MainActivity

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_namea">FusePla</string>
-    <string name="app_name">FusePla</string>
+    <string name="app_name">PLEAssistant</string>
     <string name="confirm">OK</string>
     <string name="cancel">Cancel</string>
+    <string name="choose_app_mode">please_choose app mode</string>
+    <string name="with_bap">with bap</string>
+    <string name="without_bap">without bap</string>
+    <string name="confirm_to_choose_this_mode">confirm to choose this mode</string>
+
 </resources>

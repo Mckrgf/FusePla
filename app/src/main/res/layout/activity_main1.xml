@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="com.supcon.app.MainActivity">
+    tools:context="com.supcon.mes.app.MainActivity">
 
     <TextView
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="首次进入，请选择版本"
+        android:text="@string/choose_app_mode"
         android:textSize="25sp"
         android:id="@+id/tv_title"/>
 
@@ -27,7 +27,7 @@
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="工程助手（含BAP系统登录模块）"/>
+            android:text="@string/with_bap"/>
 
 
         <RadioButton
@@ -35,10 +35,11 @@
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:text="工程助手（不含BAP系统登录模块）"/>
+            android:text="@string/without_bap"/>
 
 
         <RadioButton
+            android:visibility="gone"
             android:id="@+id/rb_c"
             android:layout_marginBottom="20dp"
             android:layout_width="match_parent"

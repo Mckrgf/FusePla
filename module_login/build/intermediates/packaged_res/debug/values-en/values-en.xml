@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">FusePla</string>
-    <string name="choose_app_mode">选择APP模式</string>
+    <string name="choose_app_mode">choose app mode</string>
     <string name="login_about_our">About us</string>
     <string name="login_again_input_new_pass">Enter the new password again</string>
     <string name="login_again_logging">Reloading</string>

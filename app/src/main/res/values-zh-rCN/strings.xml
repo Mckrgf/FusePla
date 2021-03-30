@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_namea">FusePla</string>
-    <string name="app_name">FusePla</string>
+    <string name="app_name">工程助手</string>
     <string name="confirm">确定</string>
     <string name="cancel">取消</string>
+    <string name="choose_app_mode">首次进入，请选择版本</string>
+    <string name="with_bap">包含BAP的登录系统</string>
+    <string name="without_bap">不包含BAP的登录系统</string>
+    <string name="confirm_to_choose_this_mode">是否选择该模式启动app</string>
+
 </resources>

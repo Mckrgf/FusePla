@@ -39,7 +39,7 @@ class MainActivity : BaseActivity() {
 
         when (SPUtils.getInstance().getString(SP_KEY_APP_MODE, "")) {
             "" -> {
-                ToastUtils.showShort("还未选择APP模式")
+//                ToastUtils.showShort("还未选择APP模式")
             }
             SP_APP_MODE_A -> {
                 IntentRouter.go(this@MainActivity, Constant.Router.WELCOME, Bundle())
