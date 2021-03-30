@@ -10,7 +10,7 @@ import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
 import com.google.gson.internal.LinkedTreeMap
 import com.supcon.common.BaseConstant
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.middleware.PLAApplication
 import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.module_beacon.beaconManage.BeaconListActivity

@@ -2,7 +2,7 @@ package com.supcon.mes.module_beacon.ui
 
 import android.os.Bundle
 import com.supcon.mes.module_beacon.BaseActivity
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.module_beacon.webviewTest.AndroidToJS
 import kotlinx.android.synthetic.main.activity_j_s_interactive.*
 

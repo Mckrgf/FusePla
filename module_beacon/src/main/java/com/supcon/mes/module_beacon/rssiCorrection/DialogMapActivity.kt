@@ -11,7 +11,7 @@ import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
 import com.google.gson.internal.LinkedTreeMap
 import com.supcon.common.view.view.js.DefaultHandler
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.middleware.PLAApplication
 import com.supcon.mes.middleware.util.NetUtil
 import com.supcon.mes.middleware.util.UrlUtil

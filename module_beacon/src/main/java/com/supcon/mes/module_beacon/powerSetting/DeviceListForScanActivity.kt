@@ -22,7 +22,7 @@ import android.view.animation.TranslateAnimation
 import com.blankj.utilcode.util.AppUtils
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.middleware.event.HttpEvent
 import com.supcon.mes.module_beacon.BaseActivity
 import com.supcon.mes.module_beacon.REQUEST_ENABLE_BT

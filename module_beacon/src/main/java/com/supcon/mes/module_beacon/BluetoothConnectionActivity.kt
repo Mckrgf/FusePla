@@ -13,7 +13,6 @@ import android.provider.Settings
 import android.view.View
 import com.blankj.utilcode.util.LogUtils
 import com.blankj.utilcode.util.ToastUtils
-import com.supcon.mes.R
 import com.supcon.mes.module_beacon.event.BleReceiverEvent
 import com.supcon.mes.module_beacon.utils.ClsUtils
 import kotlinx.android.synthetic.main.activity_bluetooth_detail.*

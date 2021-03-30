@@ -12,7 +12,6 @@ import com.blankj.utilcode.util.ToastUtils
 import com.supcon.common.view.base.activity.BaseWebViewActivity
 import com.supcon.common.view.util.StatusBarUtils
 import com.supcon.common.view.view.js.BridgeWebViewClientNew
-import com.supcon.mes.R
 import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.module_beacon.IntentRouter
 

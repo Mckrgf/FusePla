@@ -44,7 +44,7 @@ import android.widget.TextView;
 
 
 import com.blankj.utilcode.util.ToastUtils;
-import com.supcon.mes.R;
+import com.supcon.mes.module_beacon.R;
 import com.supcon.mes.module_beacon.BaseActivity;
 import com.supcon.mes.module_beacon.SampleGattAttributes;
 import com.supcon.mes.module_beacon.adapter.CharacterAdapter;

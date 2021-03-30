@@ -22,7 +22,6 @@ import android.widget.EditText
 import android.widget.TextView
 import com.blankj.utilcode.util.ToastUtils
 import com.lzy.okgo.OkGo
-import com.supcon.mes.R
 import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.middleware.util.NetUtil
 import com.supcon.mes.module_beacon.customUI.DigitalEditText

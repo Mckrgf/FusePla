@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.app.annotation.apt.Router;
-import com.supcon.mes.R;
+import com.supcon.mes.module_beacon.R;
 import com.supcon.mes.middleware.constant.Constant;
 
 @Router(value=Constant.Router.BEACON_WELCOME)

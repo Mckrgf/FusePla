@@ -17,7 +17,7 @@ import com.google.gson.Gson
 import com.supcon.common.view.base.activity.BaseWebViewActivity
 import com.supcon.common.view.util.StatusBarUtils
 import com.supcon.common.view.view.js.DefaultHandler
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.middleware.PLAApplication
 import com.supcon.mes.middleware.util.NetUtil
 import com.supcon.mes.middleware.util.Util.getStatusBarHeight

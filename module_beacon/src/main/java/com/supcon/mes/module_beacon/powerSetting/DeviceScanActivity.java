@@ -41,7 +41,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.blankj.utilcode.util.LogUtils;
-import com.supcon.mes.R;
+import com.supcon.mes.module_beacon.R;
 
 import java.util.ArrayList;
 

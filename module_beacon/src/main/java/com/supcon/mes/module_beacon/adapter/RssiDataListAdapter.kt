@@ -10,7 +10,7 @@ import android.widget.TextView
 import com.blankj.utilcode.util.ToastUtils
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.BaseViewHolder
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.module_beacon.bean.RssiData
 import com.supcon.mes.module_beacon.rssiCorrection.BluetoothDetailActivity
 import com.supcon.mes.module_beacon.utils.RssiDataUtil

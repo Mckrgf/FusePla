@@ -6,7 +6,7 @@ import android.support.v7.widget.GridLayoutManager
 import android.view.View
 import com.app.annotation.apt.Router
 import com.blankj.utilcode.util.ToastUtils
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.middleware.util.NetUtil
 import com.supcon.mes.module_beacon.adapter.FunctionListAdapter

@@ -10,7 +10,7 @@ import com.blankj.utilcode.util.LogUtils
 import com.google.gson.internal.LinkedTreeMap
 import com.supcon.common.BaseConstant
 import com.supcon.common.view.base.activity.BasePresenterActivity
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.middleware.PLAApplication
 import com.supcon.mes.middleware.constant.Constant
 import com.supcon.mes.module_beacon.adapter.DeviceListForNetAdapter

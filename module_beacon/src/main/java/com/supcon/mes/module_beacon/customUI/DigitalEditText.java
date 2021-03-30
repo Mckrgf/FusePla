@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 
-import com.supcon.mes.R;
+import com.supcon.mes.module_beacon.R;
 
 import java.util.ArrayList;
 import java.util.List;

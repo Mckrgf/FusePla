@@ -5,7 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import com.blankj.utilcode.util.ToastUtils
-import com.supcon.mes.R
+import com.supcon.mes.module_beacon.R
 import com.supcon.mes.module_beacon.listener.PermissionListener
 
 class SplashActivity : BaseActivity() {
