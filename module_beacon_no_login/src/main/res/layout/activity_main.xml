@@ -30,7 +30,7 @@
             android:textSize="@dimen/x32"
             android:background="@color/white"
             android:paddingLeft="@dimen/x24"
-            android:hint="请输入设备名称"/>
+            android:hint="@string/INPUT_DEVICE_NAME_HINT"/>
 
         <TextView
             android:layout_width="wrap_content"

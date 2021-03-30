@@ -62,9 +62,9 @@
     <string name="distance">distance</string>
     <string name="meter">meter</string>
     <string name="calculate">calculate</string>
-    <string name="ble_info">ble_info</string>
+    <string name="ble_info">ble info</string>
     <string name="bind">bind</string>
-    <string name="un_bind">un_bind</string>
+    <string name="un_bind">un bind</string>
 
     <string name="binding_bluetooth">binding bluetooth device</string>
     <string name="get">get info</string>
@@ -93,6 +93,8 @@
     <string name="please_input_new_server_ip">please input new server ip</string>
     <string name="old_server_ip">old server ip</string>
     <string name="port_setting">port setting</string>
+    <string name="loading">loading...</string>
+    <string name="need_to_bind_device_first">need to bind device first</string>
 
 
 </resources>

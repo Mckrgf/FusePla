@@ -28,6 +28,7 @@ open class BluetoothConnectionActivity : BaseActivity() {
     var mwaitdlg: ProgressDialog? = null
     var mBluetoothAdapter: BluetoothAdapter? = null
     var isBonded = false
+    var bleDevice: BluetoothDevice? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -48,6 +49,7 @@ open class BluetoothConnectionActivity : BaseActivity() {
         if (mReceiver == null) {
             mReceiver = BlueToothBondReceiver()
             val intentFilter = IntentFilter(BluetoothDevice.ACTION_BOND_STATE_CHANGED)
+            intentFilter.addAction(BluetoothDevice.ACTION_PAIRING_REQUEST)
             registerReceiver(mReceiver, intentFilter)
         }
     }
@@ -126,6 +128,17 @@ open class BluetoothConnectionActivity : BaseActivity() {
                             mwaitdlg?.dismiss()
                         }
                     }
+                }
+            }else if (intent.action == BluetoothDevice.ACTION_PAIRING_REQUEST) {
+                try {
+                    //1.确认配对
+//                    ClsUtils.setPairingConfirmation(BluetoothDevice::class.java, currentDevice,true)
+                    //2.终止有序广播
+                    abortBroadcast() //如果没有将广播终止，则会出现一个一闪而过的配对框。
+                    //3.调用setPin方法进行配对...
+                    val ret = ClsUtils.setPin(BluetoothDevice::class.java, bleDevice, "951357")
+                } catch (e: Exception) {
+                    e.printStackTrace()
                 }
             }
         }

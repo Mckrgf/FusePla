@@ -21,6 +21,7 @@ import android.content.Context;
 import com.lzy.okgo.callback.AbsCallback;
 import com.lzy.okgo.convert.StringConvert;
 import com.lzy.okgo.request.base.Request;
+import com.supcon.supbeacon.R;
 
 import okhttp3.Response;
 
@@ -71,7 +72,7 @@ public abstract class StringDialogCallback extends AbsCallback<String> {
     private void showProgress() {
         if (null == dialog) {
             dialog = new ProgressDialog(context);
-            dialog.setMessage("加载中...");
+            dialog.setMessage(context.getResources().getString(R.string.loading));
         }
         dialog.setCanceledOnTouchOutside(false);
         dialog.setCancelable(true);

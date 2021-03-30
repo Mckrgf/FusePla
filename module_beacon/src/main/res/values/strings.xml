@@ -91,7 +91,8 @@
     <string name="please_input_new_server_ip">请输入新的服务器地址</string>
     <string name="old_server_ip">原服务器地址</string>
     <string name="port_setting">端口号设置</string>
-
+    <string name="loading">加载中...</string>
+    <string name="need_to_bind_device_first">需要先绑定设备</string>
 
 
 </resources>

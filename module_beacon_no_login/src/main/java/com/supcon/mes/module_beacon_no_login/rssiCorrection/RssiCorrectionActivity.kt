@@ -181,7 +181,7 @@ class RssiCorrectionActivity : BaseActivity(), View.OnClickListener, RssiCorrect
             myBluetoothDevice.rssi = rssi
             mDeviceListAdapter.addDevice(myBluetoothDevice)
 
-            tv_count.text = "共找到${mDeviceListAdapter.mLeDevices?.size}个"
+            tv_count.text = "${mDeviceListAdapter.mLeDevices?.size} " + resources.getString(R.string.ALL_DEVICE_FOUND)
             LogUtils.d("zxcv" + device.name)
         }
     }

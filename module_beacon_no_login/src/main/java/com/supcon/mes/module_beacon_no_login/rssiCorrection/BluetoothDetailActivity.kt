@@ -40,7 +40,6 @@ import org.json.JSONObject
 class BluetoothDetailActivity : BluetoothConnectionActivity() {
     private val mRssiDataListAdapter = RssiDataListAdapter()
     private var mScanning = false
-    private var bleDevice: BluetoothDevice? = null
     private var mHandler: Handler? = null
     private var scanTime: Long = 0
     private var mCurrentPosition: Int = 0
@@ -132,7 +131,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
             if (isBonded) {
                 goBLEDetail()
             }else {
-                ToastUtils.showLong("需要先绑定设备")
+                ToastUtils.showLong(resources.getString(R.string.need_to_bind_device_first))
             }
         }
         if (isBonded) {

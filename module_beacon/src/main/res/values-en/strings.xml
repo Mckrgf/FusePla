@@ -93,5 +93,6 @@
     <string name="please_input_new_server_ip">please input new server ip</string>
     <string name="old_server_ip">old server ip</string>
     <string name="port_setting">port setting</string>
-
+    <string name="loading">loading...</string>
+    <string name="need_to_bind_device_first">need to bind device first</string>
 </resources>

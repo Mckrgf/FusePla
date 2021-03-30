@@ -34,7 +34,6 @@ class DeviceListForRssiAdapter(activity: RssiCorrectionActivity) : BaseQuickAdap
     override fun convert(holder: BaseViewHolder, item: MyBluetoothDevice) {
 
         holder.getView<TextView>(R.id.tv_name).text = item.device.name
-        holder.getView<TextView>(R.id.tv_address).text = "信号强度：" + item.rssi
 
         holder.getView<ImageView>(R.id.iv_map).setOnClickListener {
             val device = data[holder.adapterPosition] as MyBluetoothDevice
@@ -54,10 +53,12 @@ class DeviceListForRssiAdapter(activity: RssiCorrectionActivity) : BaseQuickAdap
                 holder.getView<ImageView>(R.id.iv_map).setImageResource(R.mipmap.iv_map_b)
             }
         }else {
-            holder.getView<TextView>(R.id.tv_n).text = "信号强度-无数据"
-            holder.getView<TextView>(R.id.tv_floor).text = "楼层-无数据"
+            holder.getView<TextView>(R.id.tv_n).text = "null"
+            holder.getView<TextView>(R.id.tv_floor).text = "null"
             holder.getView<ImageView>(R.id.iv_map).setImageResource(R.mipmap.iv_map_b)
         }
+        holder.getView<TextView>(R.id.tv_address).text = mContext.resources.getString(R.string.rssi) + item.rssi
+
     }
 
     fun addDevice(currentDevice: MyBluetoothDevice?) {

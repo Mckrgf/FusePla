@@ -100,7 +100,7 @@ open class BluetoothDetailActivity : BluetoothConnectionActivity() {
             if (isBonded) {
                 goBLEDetail()
             }else {
-                ToastUtils.showLong("需要先绑定设备")
+                ToastUtils.showLong(resources.getString(R.string.need_to_bind_device_first))
             }
         }
         if (isBonded) {

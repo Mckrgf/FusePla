@@ -42,7 +42,7 @@
         android:layout_marginBottom="@dimen/y10"
         android:textColor="@color/text_gray_7"
         android:textSize="@dimen/x24"
-        android:text="设备详情"/>
+        android:text="@string/device_detail"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="@dimen/y80"
@@ -54,7 +54,7 @@
             android:layout_weight="1"            android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/x24"
             android:gravity="center_vertical"
-            android:text="楼层"
+            android:text="@string/floor_info"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -63,7 +63,7 @@
             android:layout_weight="5"            android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/x76"
             android:background="@null"
-            android:hint="楼层信息"
+            android:hint="@string/floor_info"
             android:textSize="@dimen/x30" />
 
     </LinearLayout>
@@ -85,7 +85,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/x24"
             android:gravity="center_vertical"
-            android:text="坐标"
+            android:text="@string/coordinate"
             android:textSize="@dimen/x30" />
 
         <EditText
@@ -96,7 +96,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/x76"
             android:background="@null"
-            android:hint="坐标信息"
+            android:hint="@string/coordinate"
             android:textSize="@dimen/x30" />
 
     </LinearLayout>
@@ -116,7 +116,7 @@
             android:layout_weight="1"
             android:layout_marginLeft="@dimen/x24"
             android:gravity="center_vertical"
-            android:text="一米强度"
+            android:text="@string/rssi_m"
             android:textSize="@dimen/x25" />
 
         <EditText
@@ -127,7 +127,7 @@
             android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/x76"
             android:background="@null"
-            android:hint="一米强度"
+            android:hint="@string/rssi_m"
             android:textSize="@dimen/x30" />
 
     </LinearLayout>
@@ -140,7 +140,7 @@
         android:layout_marginBottom="@dimen/y10"
         android:textColor="@color/text_gray_7"
         android:textSize="@dimen/x24"
-        android:text="影响因子"/>
+        android:text="@string/impact_factors"/>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
@@ -167,7 +167,7 @@
             android:layout_height="@dimen/y60"
             android:layout_weight="1"
             android:layout_margin="@dimen/x10"
-            android:text="信标属性"
+            android:text="@string/ble_info"
             android:textColor="@color/white"
             android:background="@drawable/bg_button_blue_round"
             android:id="@+id/bt_detail"/>
@@ -176,7 +176,7 @@
             android:layout_height="@dimen/y60"
             android:layout_weight="1"
             android:layout_margin="@dimen/x10"
-            android:text="解绑"
+            android:text="@string/un_bind"
             android:textColor="@color/white"
             android:background="@drawable/bg_button_blue_round"
             android:id="@+id/bt_unBind"/>
