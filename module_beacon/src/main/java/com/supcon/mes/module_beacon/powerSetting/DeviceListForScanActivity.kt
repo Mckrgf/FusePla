@@ -137,7 +137,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                 }
                 startActivity(intent)
             } else {
-                ToastUtils.showLong("连接设备之前需要 【长按】 以绑定设备")
+                ToastUtils.showLong(resources.getString(R.string.tip_connect_device))
             }
         }
 
@@ -376,7 +376,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                             }
                             startActivity(intent)
                         } else {
-                            ToastUtils.showLong("连接设备之前需要 【长按】 以绑定设备")
+                            ToastUtils.showLong(resources.getString(R.string.tip_connect_device))
                         }
                     }
                     BluetoothDevice.BOND_NONE -> {

@@ -88,7 +88,6 @@ class RssiCorrectionActivity : BaseActivity(), View.OnClickListener, RssiCorrect
         bt_gps.setOnClickListener(this)
         bt_calculate.setOnClickListener(this)
         iv_return.setOnClickListener(this)
-        fragment_title_des.text = "RSSI收集"
         fragment_title_des.setTextColor(resources.getColor(R.color.black))
         iv_refresh.visibility = View.VISIBLE
         tv_search.visibility = View.VISIBLE

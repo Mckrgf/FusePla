@@ -95,4 +95,6 @@
     <string name="port_setting">port setting</string>
     <string name="loading">loading...</string>
     <string name="need_to_bind_device_first">need to bind device first</string>
+    <string name="tip_connect_device">First need to long click item</string>
+
 </resources>

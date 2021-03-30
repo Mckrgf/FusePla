@@ -13,7 +13,7 @@ import com.supcon.mes.module_beacon_no_login.GPS_ADDRESS
 import com.supcon.mes.module_beacon_no_login.RESPONSE_GET_COORDINATE
 import com.supcon.mes.module_beacon_no_login.bean.JSGPSCoordinate
 import com.supcon.supbeacon.*
-import kotlinx.android.synthetic.main.activity_g_p_s.*
+import kotlinx.android.synthetic.main.activity_g_p_s_b.*
 import java.lang.Exception
 
 
@@ -22,7 +22,7 @@ class GPSActivity : BaseActivity() {
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_g_p_s)
+        setContentView(R.layout.activity_g_p_s_b)
 
         bt_sure.setOnClickListener {
             backToMain(coordinatesBean)

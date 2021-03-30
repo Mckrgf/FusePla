@@ -43,7 +43,7 @@ class HomeActivity : BaseActivity() {
         val functions = ArrayList<Function>()
         functions.add(Function(resources.getString(R.string.RSSI_COLLECT),R.mipmap.function_rssi_collect))
         functions.add(Function(resources.getString(R.string.BEACON_SETTING),R.mipmap.function_beacon_setting))
-        functions.add(Function(resources.getString(R.string.RSSI_COLLECT), R.mipmap.function_beacon_manage))
+        functions.add(Function(resources.getString(R.string.BEACON_MANAGE), R.mipmap.function_beacon_manage))
         functions.add(Function("",R.mipmap.function_empty))
         rv_function.layoutManager = GridLayoutManager(this,4)
         rv_function.adapter = mFunctionListAdapter

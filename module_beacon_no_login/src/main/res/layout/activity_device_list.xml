@@ -76,6 +76,7 @@
 
         </RelativeLayout>
         <TextView
+            android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="设备总数"
@@ -147,7 +148,7 @@
             android:layout_height="@dimen/y96"
             android:gravity="center"
             android:textSize="@dimen/x32"
-            android:text="取消"
+            android:text="@string/cancel"
             android:textColor="@color/text_blue"
             android:id="@+id/tv_cancel"/>
     </LinearLayout>

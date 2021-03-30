@@ -1,5 +1,6 @@
 package com.supcon.mes.module_beacon_no_login.adapter
 
+import android.os.LocaleList
 import android.text.Editable
 import android.text.InputType
 import android.text.TextWatcher
@@ -22,7 +23,33 @@ class CharacterAdapter(activity: DeviceControlActivity) : BaseQuickAdapter<HashM
     private val mActivity = activity
     private var dataAll: ArrayList<HashMap<String, String>> = ArrayList()
     override fun convert(holder: BaseViewHolder, item: HashMap<String, String>) {
+        val locale: LocaleList = mContext.resources.configuration.locales
+        if (locale[0].toString().contains("en_")) {
+            when(item["NAME"]) {
+                "信号强度" -> {
+                    item["NAME"] = "rssi"
+                }
+                "广播间隔" -> {
+                    item["NAME"] = "broadcast interval"
+                }
+                "单位距离RSSI" -> {
+                    item["NAME"] = "rssi/m"
+                }
+                "设备ID" -> {
+                    item["NAME"] = "device ID"
+                }
+                "UUID" -> {
+                    item["NAME"] = "UUID"
+                }
+                "密码" -> {
+                    item["NAME"] = "password"
+                }
+            }
+        }
         holder.getView<TextView>(R.id.tv_character_name).text = item["NAME"]
+
+
+
         var aaa = item["VALUE"]?.trim()
         aaa = aaa?.replace(" ","")
 

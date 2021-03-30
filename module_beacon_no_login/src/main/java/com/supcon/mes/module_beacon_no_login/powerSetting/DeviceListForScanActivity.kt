@@ -140,7 +140,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                 }
                 startActivity(intent)
             } else {
-                ToastUtils.showLong("连接设备之前需要 【长按】 以绑定设备")
+                ToastUtils.showLong(resources.getString(R.string.tip_connect_device))
             }
         }
 
@@ -160,11 +160,11 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
             if (bleBonded(myBluetoothDevice.device)) {
                 //底部弹窗解绑设备
                 LogUtils.d("弹窗解绑")
-                showBottomDialog("解绑", dialogAnimationUp)
+                showBottomDialog(resources.getString(R.string.un_bind), dialogAnimationUp)
             } else {
                 //底部弹窗绑定设备
                 LogUtils.d("弹窗绑定")
-                showBottomDialog("绑定", dialogAnimationUp)
+                showBottomDialog(resources.getString(R.string.bind), dialogAnimationUp)
             }
             true
         }
@@ -379,7 +379,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                             }
                             startActivity(intent)
                         } else {
-                            ToastUtils.showLong("连接设备之前需要 【长按】 以绑定设备")
+                            ToastUtils.showLong(resources.getString(R.string.tip_connect_device))
                         }
                         LogUtils.d("配对成功，直接跳转")
                     }

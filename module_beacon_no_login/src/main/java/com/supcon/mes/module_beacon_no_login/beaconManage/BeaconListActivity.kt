@@ -51,7 +51,7 @@ class BeaconListActivity : BaseActivity() {
         }
 
 
-        fragment_title_des.text = "信标管理"
+        fragment_title_des.text = resources.getString(R.string.BEACON_MANAGE)
         fragment_title_des.setTextColor(resources.getColor(R.color.black))
         et_search.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
@@ -78,7 +78,7 @@ class BeaconListActivity : BaseActivity() {
                         val data = event.data as LinkedTreeMap<*, *>
                         val list = data["list"] as java.util.ArrayList< LinkedTreeMap<String, Any>>
                         mDeviceListAdapter.setdata(list)
-                        tv_count.text = "${mDeviceListAdapter.data?.size} " + "设备被找到"
+                        tv_count.text = "${mDeviceListAdapter.data?.size} " + resources.getString(R.string.ALL_DEVICE_FOUND)
 
                     }
                     else -> {
