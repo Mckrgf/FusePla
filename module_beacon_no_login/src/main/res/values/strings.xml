@@ -79,5 +79,8 @@
     <string name="Unbound">未绑定</string>
     <string name="already_bound">已经绑定</string>
     <string name="success_to_unbind">解除绑定成功</string>
+    <string name="please_input_new_server_ip">请输入新的服务器地址</string>
+    <string name="old_server_ip">原服务器地址</string>
+    <string name="port_setting">端口号设置</string>
 
 </resources>
