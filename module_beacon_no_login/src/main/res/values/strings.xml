@@ -94,5 +94,6 @@
     <string name="loading">加载中...</string>
     <string name="need_to_bind_device_first">需要先绑定设备</string>
     <string name="tip_connect_device">连接设备之前需要 【长按】 以绑定设备</string>
+    <string name="not_open">暂未开放</string>
 
 </resources>

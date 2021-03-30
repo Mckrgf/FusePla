@@ -64,7 +64,7 @@ class HomeActivity : BaseActivity() {
                     startActivity(intent)
                 }
                 else -> {
-                    ToastUtils.showLong("暂未开放")
+                    ToastUtils.showLong(resources.getString(R.string.not_open))
                 }
             }
         }
