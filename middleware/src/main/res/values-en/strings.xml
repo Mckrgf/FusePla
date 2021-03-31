@@ -91,5 +91,7 @@
     <string name="login_user_name">User Name</string>
     <string name="choose_app_mode">please choose app mode</string>
     <string name="fail_to_get_ble_info">fail to get ble info</string>
+    <string name="operation_failed">operation failed</string>
+    <string name="operation_successful">operation successful</string>
 
 </resources>

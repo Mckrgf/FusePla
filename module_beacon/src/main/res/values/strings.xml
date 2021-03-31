@@ -97,6 +97,8 @@
     <string name="not_open">暂未开放</string>
     <string name="open_location_first">请先打开位置开关</string>
     <string name="please_login">请重新登录</string>
+    <string name="operation_failed">操作失败</string>
+    <string name="operation_successful">操作成功</string>
 
 
 </resources>

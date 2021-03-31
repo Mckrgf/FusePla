@@ -3165,6 +3165,7 @@ string cube_ptr_seconds_ago
 string dialog_title
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fail_to_get_ble_info
 string hide_bottom_view_on_scroll_behavior
 string login_about_our
 string login_again_input_new_pass

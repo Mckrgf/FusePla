@@ -87,7 +87,7 @@ class BeaconListActivity : BaseActivity() {
 
                     }
                     else -> {
-                        ToastUtils.showShort("获取信标列表失败" + event.msg)
+                        ToastUtils.showLong(resources.getString(com.supcon.mes.middleware.R.string.operation_failed) + event.msg)
                     }
                 }
             }

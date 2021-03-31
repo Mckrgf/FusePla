@@ -99,5 +99,7 @@
     <string name="not_open">not open</string>
     <string name="open_location_first">please open location first</string>
     <string name="please_login">please login</string>
+    <string name="operation_failed">operation failed</string>
+    <string name="operation_successful">operation successful</string>
 
 </resources>

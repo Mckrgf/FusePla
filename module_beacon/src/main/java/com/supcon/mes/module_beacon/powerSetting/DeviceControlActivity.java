@@ -367,12 +367,12 @@ public class DeviceControlActivity extends BaseActivity {
             }
             adapter.setData(currentPosition, item);
             if (showChangeResult) {
-                ToastUtils.showLong("修改成功");
+                ToastUtils.showLong("操作成功");
                 if (updateDeviceId) {
                     ((TextView) findViewById(R.id.fragment_title_des)).setText(mDeviceName);
                 }
             } else {
-                ToastUtils.showLong("获取成功");
+                ToastUtils.showLong("操作成功");
             }
         }
     }

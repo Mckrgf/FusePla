@@ -120,7 +120,7 @@ open class BaseActivity : AppCompatActivity() {
                                 return@OnClickListener
                             }
                             NetUtil().save(strOut,port)
-                            ToastUtils.showShort("保存完成")
+                            ToastUtils.showShort(resources.getString(R.string.operation_successful))
                             dismiss()
                             exitProc1()
                         }

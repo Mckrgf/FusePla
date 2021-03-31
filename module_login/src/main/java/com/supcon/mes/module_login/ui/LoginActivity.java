@@ -441,12 +441,12 @@ public class LoginActivity extends BaseControllerActivity implements LogoutContr
 
     @Override
     public void logoutSuccess() {
-        com.blankj.utilcode.util.ToastUtils.showLong("登出成功");
+        com.blankj.utilcode.util.ToastUtils.showLong(getResources().getString(R.string.operation_successful));
     }
 
     @Override
     public void logoutFailed(String errorMsg) {
-        com.blankj.utilcode.util.ToastUtils.showLong("登出失败");
+        com.blankj.utilcode.util.ToastUtils.showLong(getResources().getString(R.string.operation_failed));
     }
 
     @Override

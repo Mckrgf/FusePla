@@ -89,7 +89,7 @@ class HttpRequest {
 
                 override fun onError(response: Response<String>) {
                     super.onError(response)
-                    ToastUtils.showLong("更新信标信息失败")
+                    ToastUtils.showLong(baseActivity!!.resources.getString(R.string.operation_failed))
                 }
             })
     }
@@ -115,7 +115,7 @@ class HttpRequest {
 
                 override fun onError(response: Response<String>) {
                     super.onError(response)
-                    ToastUtils.showLong("添加信标信息失败")
+                    ToastUtils.showLong(baseActivity!!.resources.getString(R.string.operation_failed))
                 }
             })
     }
@@ -140,7 +140,7 @@ class HttpRequest {
 
                 override fun onError(response: Response<String>) {
                     super.onError(response)
-                    ToastUtils.showLong("删除信标信息失败")
+                    ToastUtils.showLong(baseActivity!!.resources.getString(R.string.operation_failed))
                 }
             })
     }

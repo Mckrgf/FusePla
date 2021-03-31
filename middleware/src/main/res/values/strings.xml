@@ -91,5 +91,7 @@
     <string name="login_user_name">用户名</string>
     <string name="choose_app_mode">选择APP模式</string>
     <string name="fail_to_get_ble_info">获取信标信息失败</string>
+    <string name="operation_failed">操作失败</string>
+    <string name="operation_successful">操作成功</string>
 
 </resources>

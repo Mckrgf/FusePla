@@ -4,6 +4,7 @@
     <string name="cancel">Cancel</string>
     <string name="choose_app_mode">please choose app mode</string>
     <string name="confirm">OK</string>
+    <string name="fail_to_get_ble_info">fail to get ble info</string>
     <string name="login_about_our">About us</string>
     <string name="login_again_input_new_pass">Enter the new password again</string>
     <string name="login_again_logging">Reloading</string>

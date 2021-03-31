@@ -111,23 +111,23 @@ class BeaconDetailActivity : BaseActivity() {
             HttpRequest.REQUEST_CODE_UPDATE_BEACON -> {
                 when (event.code) {
                     200 -> {
-                        ToastUtils.showShort("修改成功")
+                        ToastUtils.showShort(resources.getString(R.string.operation_successful))
                         HttpRequest().getBeacon(this, sn)
                     }
                     else -> {
-                        ToastUtils.showShort("修改失败" + event.msg)
+                        ToastUtils.showShort(resources.getString(R.string.operation_failed) + event.msg)
                     }
                 }
             }
             HttpRequest.REQUEST_CODE_DELETE_BEACON -> {
                 when (event.code) {
                     200 -> {
-                        ToastUtils.showShort("删除成功")
+                        ToastUtils.showShort(resources.getString(R.string.operation_successful))
                         setResult(200)
                         finish()
                     }
                     else -> {
-                        ToastUtils.showShort("删除失败" + event.msg)
+                        ToastUtils.showShort(resources.getString(R.string.operation_failed) + event.msg)
                     }
                 }
             }
@@ -159,7 +159,7 @@ class BeaconDetailActivity : BaseActivity() {
                         webView.loadUrl(url)
                     }
                     else -> {
-                        ToastUtils.showShort("获取数据失败" + event.msg)
+                        ToastUtils.showShort(resources.getString(R.string.operation_failed) + event.msg)
                     }
                 }
             }
