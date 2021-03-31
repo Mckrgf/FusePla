@@ -176,7 +176,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                         ToastUtils.showLong(resources.getString(R.string.success_to_unbind))
                         mDeviceListAdapter.notifyItemChanged(currentDevicePosition)
                     } else {
-                        ToastUtils.showLong("该系统不支持在app内解除蓝牙绑定，请自行解绑")
+                        ToastUtils.showLong(resources.getString(R.string.please_unbind_by_yourself))
                         object : Thread() {
                             override fun run() {
                                 super.run()

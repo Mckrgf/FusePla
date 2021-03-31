@@ -235,11 +235,11 @@ public class DeviceControlActivity extends BaseActivity {
                         try {
                             int valueInt = Integer.parseInt(value);
                             if (valueInt < 0 || valueInt > 12) {
-                                ToastUtils.showLong("只能填写0-12之间的数字");
+                                ToastUtils.showLong(getResources().getString(R.string.only_1_12));
                                 return;
                             }
                         } catch (Exception e) {
-                            ToastUtils.showLong("只能填写0-12之间的数字");
+                            ToastUtils.showLong(getResources().getString(R.string.only_1_12));
                             return;
                         }
                         byte[] a = DataTransform.Stringtobytes(value);
@@ -249,11 +249,11 @@ public class DeviceControlActivity extends BaseActivity {
                         try {
                             int valueInt = Integer.parseInt(value);
                             if (valueInt < 10 || valueInt > 200) {
-                                ToastUtils.showLong("只能填写10-200之间的数字");
+                                ToastUtils.showLong(getResources().getString(R.string.only_10_200));
                                 return;
                             }
                         } catch (Exception e) {
-                            ToastUtils.showLong("只能填写10-200之间的数字");
+                            ToastUtils.showLong(getResources().getString(R.string.only_10_200));
                             return;
                         }
                         byte[] a = DataTransform.Stringtobytes(value);

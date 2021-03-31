@@ -102,6 +102,13 @@
     <string name="operation_failed">operation failed</string>
     <string name="operation_successful">operation successful</string>
     <string name="error_ip_can_not_be_empty">error ip can not be empty</string>
+    <string name="can_not_be_empty">can not be empty</string>
+    <string name="only_1_12">only can input 1-12</string>
+    <string name="error_port_can_not_be_empty">error port can not be empty</string>
+    <string name="please_unbind_by_yourself">please unbind by yourself</string>
+    <string name="only_0_255">only can input 0-255</string>
+    <string name="only_10_200">only can input 10-200</string>
+    <string name="can_not_operate_under_7">can not operate under Android 7.0</string>
 
 
 </resources>

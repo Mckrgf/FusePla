@@ -95,9 +95,13 @@
     <item name="drag_handle" type="id"/>
     <item name="first" type="id"/>
     <string name="app_name">FusePla</string>
+    <string name="can_not_be_empty">不能为空</string>
+    <string name="can_not_operate_under_7">Android7.0以下无法操作</string>
     <string name="cancel">取消</string>
     <string name="choose_app_mode">选择APP模式</string>
     <string name="confirm">确定</string>
+    <string name="error_ip_can_not_be_empty">错误：ip不能为空</string>
+    <string name="error_port_can_not_be_empty">错误：端口不能为空</string>
     <string name="fail_to_get_ble_info">获取信标信息失败</string>
     <string name="login_about_our">关于我们</string>
     <string name="login_again_input_new_pass">再次输入新密码</string>
@@ -183,6 +187,11 @@
     <string name="login_unuse">不启用</string>
     <string name="login_user_name">用户名</string>
     <string name="login_wrong_all">网络设置或用户名密码错误</string>
+    <string name="only_0_255">只能填写0-255之间的数字</string>
+    <string name="only_10_200">只能填写10-200之间的数字</string>
+    <string name="operation_failed">操作失败</string>
+    <string name="operation_successful">操作成功</string>
+    <string name="please_unbind_by_yourself">请自行解绑</string>
     <style name="AnimationPreview">
         <item name="android:windowEnterAnimation">@anim/fade_in</item>
         <item name="android:windowExitAnimation">@anim/fade_out</item>

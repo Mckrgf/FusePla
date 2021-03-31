@@ -94,5 +94,11 @@
     <string name="operation_failed">操作失败</string>
     <string name="operation_successful">操作成功</string>
     <string name="error_ip_can_not_be_empty">错误：ip不能为空</string>
+    <string name="can_not_be_empty">不能为空</string>
+    <string name="error_port_can_not_be_empty">错误：端口不能为空</string>
+    <string name="please_unbind_by_yourself">请自行解绑</string>
+    <string name="only_0_255">只能填写0-255之间的数字</string>
+    <string name="only_10_200">只能填写10-200之间的数字</string>
+    <string name="can_not_operate_under_7">Android7.0以下无法操作</string>
 
 </resources>

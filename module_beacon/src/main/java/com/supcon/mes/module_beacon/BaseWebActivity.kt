@@ -35,7 +35,7 @@ open class BaseWebActivity : BaseWebViewActivity() {
                     bundle.putBoolean(Constant.IntentKey.LOGOUT, true)
                     IntentRouter.go(this@BaseWebActivity, Constant.Router.LOGIN, bundle)
                 }else {
-                    ToastUtils.showLong(errorResponse?.statusCode  + errorResponse?.reasonPhrase)
+                    ToastUtils.showLong("" + errorResponse?.statusCode  + errorResponse?.reasonPhrase)
                 }
             }
         }

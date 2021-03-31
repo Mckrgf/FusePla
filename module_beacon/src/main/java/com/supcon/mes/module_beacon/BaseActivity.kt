@@ -110,13 +110,13 @@ open class BaseActivity : AppCompatActivity() {
                             }
                             if (serverIpArray[0].toInt() > 255 || serverIpArray[1].toInt() > 255 || serverIpArray[2].toInt() > 255 || serverIpArray[3].toInt() > 255
                             ) {
-                                ToastUtils.showShort("错误,IP段值必须在0至255之间")
+                                ToastUtils.showShort(resources.getString(R.string.only_0_255))
                                 return@OnClickListener
                             }
                             val strOut = serverIpArray[0] + "." + serverIpArray[1] + "." + serverIpArray[2] + "." + serverIpArray[3]
                             val port = mTVPort?.text.toString()
                             if (TextUtils.isEmpty(port)) {
-                                ToastUtils.showShort("端口号不能为空")
+                                ToastUtils.showShort(resources.getString(R.string.error_port_can_not_be_empty))
                                 return@OnClickListener
                             }
                             NetUtil().save(strOut,port)

@@ -70,7 +70,7 @@ class RssiDataListAdapter : BaseQuickAdapter<RssiData,BaseViewHolder>(R.layout.i
                 val dis = RssiDataUtil.get().getDistance(rssi)
                 ToastUtils.showLong("距离为：$dis")
             } catch (e: Exception) {
-                ToastUtils.showLong("rssi不能为空$e")
+                ToastUtils.showLong("$e")
             }
         }
     }

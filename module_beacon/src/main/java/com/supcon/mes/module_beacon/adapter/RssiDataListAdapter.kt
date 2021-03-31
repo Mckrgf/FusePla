@@ -68,9 +68,9 @@ class RssiDataListAdapter : BaseQuickAdapter<RssiData, BaseViewHolder>(R.layout.
             try {
                 val rssi = holder.getView<EditText>(R.id.et_rssi_average).text.toString().toDouble()
                 val dis = RssiDataUtil.get().getDistance(rssi)
-                ToastUtils.showLong("距离为：$dis")
+                ToastUtils.showLong(mContext.resources.getString(R.string.distance) + "：$dis")
             } catch (e: Exception) {
-                ToastUtils.showLong("rssi不能为空$e")
+                ToastUtils.showLong("$e")
             }
         }
 

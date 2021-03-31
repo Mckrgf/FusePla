@@ -39,6 +39,7 @@ import android.util.Log;
 import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ToastUtils;
 import com.supcon.mes.module_beacon_no_login.SampleGattAttributes;
+import com.supcon.supbeacon.R;
 
 import java.util.List;
 import java.util.UUID;
@@ -151,7 +152,7 @@ public class BluetoothLeService extends Service {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 intent.putExtra(EXTRA_CHARACTERISTICS, characteristic);
             }else {
-                ToastUtils.showLong("Android7.0以下系统不支持查看/修改");
+                ToastUtils.showLong(getResources().getString(R.string.can_not_operate_under_7));
             }
             mCurrentCharacteristic = characteristic;
         }

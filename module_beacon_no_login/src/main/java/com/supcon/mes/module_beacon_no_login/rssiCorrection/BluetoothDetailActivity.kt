@@ -341,7 +341,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
                                 HttpRequest().addBeacon(this, jsonObject)
                             }
                             else -> {
-                                ToastUtils.showLong("信标信息获取失败" + event.msg)
+                                ToastUtils.showLong(resources.getString(R.string.operation_failed)+ event.msg)
                             }
                         }
                     }
@@ -350,22 +350,22 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
             HttpRequest.REQUEST_CODE_UPDATE_BEACON -> {
                 when (event.code) {
                     200 -> {
-                        ToastUtils.showLong("信标信息更新成功")
+                        ToastUtils.showLong(resources.getString(R.string.operation_successful))
                         getBeaconState = 0
                         HttpRequest().getBeacon(this, getSN())
                         saveDataToSP()
                     }
 
-                    else -> ToastUtils.showLong("信标信息更新失败" + event.msg)
+                    else -> ToastUtils.showLong(resources.getString(R.string.operation_failed) + event.msg)
                 }
             }
             HttpRequest.REQUEST_CODE_ADD_BEACON -> {
                 when (event.code) {
                     200 -> {
-                        ToastUtils.showLong("信标信息添加成功")
+                        ToastUtils.showLong(resources.getString(R.string.operation_successful))
                         saveDataToSP()
                     }
-                    else -> ToastUtils.showLong("信标信息更新失败" + event.msg)
+                    else -> ToastUtils.showLong(resources.getString(R.string.operation_failed) + event.msg)
                 }
             }
         }
