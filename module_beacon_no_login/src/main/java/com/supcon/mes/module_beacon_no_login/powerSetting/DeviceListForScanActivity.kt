@@ -189,7 +189,7 @@ class DeviceListForScanActivity : BaseActivity(), View.OnClickListener {
                     }
                 }
                 BluetoothDevice.BOND_BONDING -> {
-                    ToastUtils.showLong("正在绑定中")
+                    ToastUtils.showLong(resources.getString(R.string.binding))
                 }
                 BluetoothDevice.BOND_NONE -> {
                     currentDevice?.createBond()

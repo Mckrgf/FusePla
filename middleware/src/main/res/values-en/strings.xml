@@ -93,5 +93,6 @@
     <string name="fail_to_get_ble_info">fail to get ble info</string>
     <string name="operation_failed">operation failed</string>
     <string name="operation_successful">operation successful</string>
+    <string name="error_ip_can_not_be_empty">error ip can not be empty</string>
 
 </resources>

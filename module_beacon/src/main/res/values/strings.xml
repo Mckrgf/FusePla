@@ -99,6 +99,7 @@
     <string name="please_login">请重新登录</string>
     <string name="operation_failed">操作失败</string>
     <string name="operation_successful">操作成功</string>
+    <string name="error_ip_can_not_be_empty">错误：ip不能为空</string>
 
 
 </resources>

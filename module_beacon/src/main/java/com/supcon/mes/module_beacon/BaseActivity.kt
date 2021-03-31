@@ -105,7 +105,7 @@ open class BaseActivity : AppCompatActivity() {
                         R.id.btn_ok -> {
                             val serverIpArray: Array<String> = mednewaddr?.digitalEditTextValue as Array<String>
                             if (serverIpArray[0] == "" || serverIpArray[1] == "" || serverIpArray[2] == "" || serverIpArray[3] == "" || serverIpArray[0] == "0111" || serverIpArray[1] == "0111" || serverIpArray[2] == "0111" || serverIpArray[3] == "0111") {
-                                ToastUtils.showShort("错误.IP段不能为空")
+                                ToastUtils.showShort(resources.getString(R.string.error_ip_can_not_be_empty))
                                 return@OnClickListener
                             }
                             if (serverIpArray[0].toInt() > 255 || serverIpArray[1].toInt() > 255 || serverIpArray[2].toInt() > 255 || serverIpArray[3].toInt() > 255
