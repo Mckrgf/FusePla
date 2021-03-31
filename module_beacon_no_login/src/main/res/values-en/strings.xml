@@ -109,6 +109,8 @@
     <string name="only_0_255">only can input 0-255</string>
     <string name="only_10_200">only can input 10-200</string>
     <string name="can_not_operate_under_7">can not operate under Android 7.0</string>
+    <string name="need_to_allow_all_permission_required">need to allow all permission required</string>
+    <string name="please_get_a_item_firstly">please get a item firstly</string>
 
 
 </resources>

@@ -73,7 +73,7 @@ open class BluetoothConnectionActivity : BaseActivity() {
             bt_bind.visibility = View.VISIBLE
             isBonded = false
         } else {
-            ToastUtils.showLong("该系统不支持在app内解除蓝牙绑定，请自行解绑")
+            ToastUtils.showLong(resources.getString(R.string.please_unbind_by_yourself))
             object : Thread() {
                 override fun run() {
                     super.run()

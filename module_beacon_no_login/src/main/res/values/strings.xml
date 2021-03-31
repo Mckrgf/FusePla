@@ -107,5 +107,7 @@
     <string name="only_0_255">只能填写0-255之间的数字</string>
     <string name="only_10_200">只能填写10-200之间的数字</string>
     <string name="can_not_operate_under_7">Android7.0以下无法操作</string>
+    <string name="need_to_allow_all_permission_required">警告,未能获取完整授权，应用将退出\\n在权限设置中开启相应权限后再重新启动APP</string>
+    <string name="please_get_a_item_firstly">请先获取一个条目</string>
 
 </resources>

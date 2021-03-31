@@ -228,7 +228,7 @@ public class DeviceControlActivity extends BaseActivity {
                 if (null != characteristic) {
                     String value = adapter.getData().get(currentPosition).get("VALUE");
                     if (TextUtils.isEmpty(value)) {
-                        ToastUtils.showLong("不可为空");
+                        ToastUtils.showLong(getResources().getString(R.string.can_not_be_empty));
                         return;
                     }
                     if (characteristic.getUuid().toString().contains("0000fff1")) {
@@ -270,7 +270,7 @@ public class DeviceControlActivity extends BaseActivity {
                         ToastUtils.showLong(getString(R.string.only_can_abc));
                     }
                 } else {
-                    ToastUtils.showLong("请先选择信号强度并点击获取");
+                    ToastUtils.showLong(getResources().getString(R.string.please_get_a_item_firstly));
                 }
             }
         });
@@ -367,12 +367,12 @@ public class DeviceControlActivity extends BaseActivity {
             }
             adapter.setData(currentPosition, item);
             if (showChangeResult) {
-                ToastUtils.showLong("操作成功");
+                ToastUtils.showLong(getResources().getString(R.string.operation_successful));
                 if (updateDeviceId) {
                     ((TextView) findViewById(R.id.fragment_title_des)).setText(mDeviceName);
                 }
             } else {
-                ToastUtils.showLong("操作成功");
+                ToastUtils.showLong(getResources().getString(R.string.operation_failed));
             }
         }
     }

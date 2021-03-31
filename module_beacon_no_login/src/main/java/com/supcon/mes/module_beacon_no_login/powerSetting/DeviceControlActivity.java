@@ -267,7 +267,7 @@ public class DeviceControlActivity extends BaseActivity {
                         ToastUtils.showLong(getString(R.string.only_can_abc));
                     }
                 } else {
-                    ToastUtils.showLong("请先选择信号强度并点击获取");
+                    ToastUtils.showLong(getResources().getString(R.string.please_get_a_item_firstly));
                 }
             }
         });

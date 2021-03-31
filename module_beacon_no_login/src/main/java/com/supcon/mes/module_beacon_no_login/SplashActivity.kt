@@ -34,7 +34,7 @@ class SplashActivity : BaseActivity() {
                     }
 
                     override fun onDenied(deniedPermission: List<String?>?) { //授权失败权限集合
-                        ToastUtils.showShort("警告,未能获取完整授权，应用将退出\\\\n在权限设置中开启相应权限后再重新启动APP")
+                        ToastUtils.showShort(resources.getString(R.string.need_to_allow_all_permission_required))
                     }
                 })
     }

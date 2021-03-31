@@ -220,7 +220,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
             iv_refresh.clearAnimation()
             mScanning = false
             mBluetoothAdapter!!.stopLeScan(mLeScanCallback)
-            ToastUtils.showShort("扫描结束")
+            ToastUtils.showShort(resources.getString(R.string.stop_scan))
             mHandler!!.removeCallbacksAndMessages(null);
         }
         invalidateOptionsMenu()
@@ -229,7 +229,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
     private val mLeScanCallback = BluetoothAdapter.LeScanCallback { device, rssi, a ->
         runOnUiThread {
             if (device.address == bleDevice?.address) {
-                alertDialog?.setMessage("正在扫描：$rssi")
+                alertDialog?.setMessage( resources.getString(R.string.scanning) + "：$rssi")
                 LogUtils.d("获取到强度值：$rssi")
                 rssis.add(rssi)
                 if (rssis.size > 10) {
