@@ -3294,6 +3294,7 @@ string md_error_label
 string md_presets_label
 string md_storage_perm_error
 string mtrl_chip_close_icon_content_description
+string need_to_allow_all_permission_required
 string new_folder
 string only_0_255
 string only_10_200
@@ -3305,6 +3306,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string please_get_a_item_firstly
 string please_unbind_by_yourself
 string search_menu_title
 string spinner

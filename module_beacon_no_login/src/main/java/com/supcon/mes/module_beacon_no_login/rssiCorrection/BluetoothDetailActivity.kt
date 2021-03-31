@@ -83,8 +83,8 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
             HttpRequest().getBeacon(this,getSN())
         }
         alertDialog = AlertDialog.Builder(this)
-            .setTitle("提示")
-            .setMessage("正在扫描")
+            .setTitle(resources.getString(R.string.tip))
+            .setMessage(resources.getString(R.string.scanning))
             .setCancelable(false)
             .create()
 
@@ -165,7 +165,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
                     RESPONSE_GET_COORDINATE -> {
                         currentCoordinate = data?.getSerializableExtra(COORDINATE_KEY) as JSGPSCoordinate.ParamBean.CoordinatesBean
                         val coordinates2f = currentCoordinate
-                        et_gps_content.setText("维度：${coordinates2f?.lat} 经度: ${coordinates2f?.lon} 高度: ${coordinates2f?.hei}")
+                        et_gps_content.setText("${resources.getString(R.string.lan)}：${currentCoordinate?.lat} ${resources.getString(R.string.lon)}: ${currentCoordinate?.lon} ${resources.getString(R.string.height)}: ${currentCoordinate?.hei}")
                     }
                 }
             }
@@ -276,7 +276,7 @@ class BluetoothDetailActivity : BluetoothConnectionActivity() {
                                 val x = data["x"].toString()
                                 val y = data["y"].toString()
                                 val z = data["z"].toString()
-                                et_gps_content.setText("维度：$x 经度: $y 高度: $z")
+                                et_gps_content.setText("${resources.getString(R.string.lan)}：$x ${resources.getString(R.string.lon)}: $y ${resources.getString(R.string.height)}: $z")
                                 val p0 = data["p0"].toString().toDouble()
 //                                p0 -= 127
                                 et_p0.setText(p0.toString())

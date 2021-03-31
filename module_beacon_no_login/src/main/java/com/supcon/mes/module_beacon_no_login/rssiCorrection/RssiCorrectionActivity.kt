@@ -250,7 +250,7 @@ class RssiCorrectionActivity : BaseActivity(), View.OnClickListener, RssiCorrect
                         coordinates2f?.hei = Formatter().format("%.2f", currentCoordinate?.hei).toString().toDouble()
                         coordinates2f?.lat = Formatter().format("%.2f", currentCoordinate?.lat).toString().toDouble()
                         coordinates2f?.lon = Formatter().format("%.2f", currentCoordinate?.lon).toString().toDouble()
-                        tv_coordinate_main.text = "维度：${coordinates2f?.lat} 经度: ${coordinates2f?.lon} 高度: ${coordinates2f?.hei}"
+                        tv_coordinate_main.text = "${resources.getString(R.string.lan)}：${currentCoordinate?.lat} ${resources.getString(R.string.lon)}: ${currentCoordinate?.lon} ${resources.getString(R.string.height)}: ${currentCoordinate?.hei}"
                     }
                 }
             }

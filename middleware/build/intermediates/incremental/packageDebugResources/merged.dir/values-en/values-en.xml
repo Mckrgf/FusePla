@@ -93,10 +93,12 @@
     <string name="login_unuse">Not enabled</string>
     <string name="login_user_name">User Name</string>
     <string name="login_wrong_all">Network settings or user name password error</string>
+    <string name="need_to_allow_all_permission_required">need to allow all permission required</string>
     <string name="only_0_255">only can input 0-255</string>
     <string name="only_10_200">only can input 10-200</string>
     <string name="only_1_12">only can input 1-12</string>
     <string name="operation_failed">operation failed</string>
     <string name="operation_successful">operation successful</string>
+    <string name="please_get_a_item_firstly">please get a item firstly</string>
     <string name="please_unbind_by_yourself">please unbind by yourself</string>
 </resources>

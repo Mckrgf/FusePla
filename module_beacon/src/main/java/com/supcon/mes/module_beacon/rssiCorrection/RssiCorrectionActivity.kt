@@ -32,11 +32,13 @@ import com.supcon.mes.module_beacon.bean.MyBluetoothDevice
 import com.supcon.mes.module_beacon.net.HttpRequest
 import com.supcon.mes.module_beacon.utils.CalculateUtil
 import com.supcon.mes.module_beacon.utils.RssiDataUtil
+import kotlinx.android.synthetic.main.activity_bluetooth_detail.*
 import kotlinx.android.synthetic.main.activity_device_list.*
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.bt_sort
 import kotlinx.android.synthetic.main.activity_main.et_search
 import kotlinx.android.synthetic.main.activity_main.number_progress_bar
+import kotlinx.android.synthetic.main.activity_main.rv_rssi_data
 import kotlinx.android.synthetic.main.activity_main.tv_count
 import kotlinx.android.synthetic.main.activity_main.tv_search
 import kotlinx.android.synthetic.main.all_title.*
@@ -256,7 +258,8 @@ class RssiCorrectionActivity : BaseActivity(), View.OnClickListener, RssiCorrect
                         coordinates2f?.hei = Formatter().format("%.2f", currentCoordinate?.hei).toString().toDouble()
                         coordinates2f?.lat = Formatter().format("%.2f", currentCoordinate?.lat).toString().toDouble()
                         coordinates2f?.lon = Formatter().format("%.2f", currentCoordinate?.lon).toString().toDouble()
-                        tv_coordinate_main.text = "纬度：${coordinates2f?.lat} 经度: ${coordinates2f?.lon} 高度: ${coordinates2f?.hei}"
+                        tv_coordinate_main.text = "${resources.getString(R.string.lan)}：${currentCoordinate?.lat} ${resources.getString(R.string.lon)}: ${currentCoordinate?.lon} ${resources.getString(R.string.height)}: ${currentCoordinate?.hei}"
+
                     }
                 }
             }
