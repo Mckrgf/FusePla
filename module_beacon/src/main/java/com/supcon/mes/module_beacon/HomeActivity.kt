@@ -38,7 +38,7 @@ class HomeActivity : BaseActivity() {
         iv_setting.visibility = View.VISIBLE
         val gpsUtil = GPSUtil()
         if (!gpsUtil.isOPen(this)) {
-            ToastUtils.showLong("请开启定位信息（不用于收集个人信息），如不知道密码，可以在系统下拉菜单上把 位置信息 按钮打开")
+            ToastUtils.showLong(resources.getString(R.string.open_location_first))
             gpsUtil.openGPS(this)
         }
     }
