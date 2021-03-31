@@ -27,7 +27,7 @@ open class BaseWebActivity : BaseWebViewActivity() {
                 super.onReceivedHttpError(view, request, errorResponse)
                 LogUtils.d("cnmcnmcnm")
                 if (errorResponse?.statusCode == 401) {
-                    ToastUtils.showLong("登录状态失效，请重新登录")
+                    ToastUtils.showLong(resources.getString(R.string.please_login))
 
 //                bundle.putInt(Constant.IntentKey.LOGIN_LOGO_ID, R.drawable.ic_login_logo);
                     val bundle = Bundle()

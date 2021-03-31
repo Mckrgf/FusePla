@@ -5,6 +5,7 @@ import com.blankj.utilcode.util.ToastUtils
 import com.google.gson.Gson
 import com.lzy.okgo.OkGo
 import com.lzy.okgo.model.Response
+import com.supcon.mes.middleware.R
 import com.supcon.mes.middleware.bean.OkResponse
 import com.supcon.mes.middleware.net.StringDialogCallback
 import com.supcon.mes.middleware.util.NetUtil
@@ -37,7 +38,7 @@ class HttpRequest {
 
                 override fun onError(response: Response<String>) {
                     super.onError(response)
-                    ToastUtils.showLong("获取信标信息失败")
+                    ToastUtils.showLong(baseActivity!!.resources.getString(R.string.fail_to_get_ble_info))
                 }
             })
     }
@@ -61,7 +62,7 @@ class HttpRequest {
 
                 override fun onError(response: Response<String>) {
                     super.onError(response)
-                    ToastUtils.showLong("获取信标信息失败")
+                    ToastUtils.showLong(baseActivity!!.resources.getString(R.string.fail_to_get_ble_info))
                 }
             })
     }

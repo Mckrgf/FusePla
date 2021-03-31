@@ -10,6 +10,7 @@ import com.supcon.mes.module_beacon_no_login.BaseActivity
 import com.supcon.mes.module_beacon_no_login.bean.OkResponse
 import com.supcon.mes.module_beacon_no_login.event.HttpEvent
 import com.supcon.mes.module_beacon_no_login.utils.NetUtil
+import com.supcon.supbeacon.R
 import org.greenrobot.eventbus.EventBus
 import org.json.JSONObject
 
@@ -39,7 +40,7 @@ class HttpRequest {
 
                 override fun onError(response: Response<String>) {
                     super.onError(response)
-                    ToastUtils.showLong("获取信标信息失败")
+                    ToastUtils.showLong(baseActivity!!.resources.getString(R.string.fail_to_get_ble_info))
                 }
             })
     }
@@ -116,7 +117,7 @@ class HttpRequest {
 
                 override fun onError(response: Response<String>) {
                     super.onError(response)
-                    ToastUtils.showLong("获取信标信息失败")
+                    ToastUtils.showLong(baseActivity!!.resources.getString(R.string.fail_to_get_ble_info))
                 }
             })
     }

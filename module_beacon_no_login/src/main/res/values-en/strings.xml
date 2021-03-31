@@ -98,6 +98,7 @@
     <string name="tip_connect_device">First need to long click item</string>
     <string name="not_open">not open</string>
     <string name="open_location_first">please open location first</string>
+    <string name="please_login">please login</string>
 
 
 </resources>
