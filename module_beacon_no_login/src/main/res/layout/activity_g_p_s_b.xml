@@ -13,7 +13,7 @@
         android:layout_centerHorizontal="true"
         android:layout_margin="@dimen/x10"
         android:enabled="false"
-        android:text="确定" />
+        android:text="@string/confirm" />
 
     <com.github.lzyzsd.jsbridge.BridgeWebView
         android:id="@+id/webView"

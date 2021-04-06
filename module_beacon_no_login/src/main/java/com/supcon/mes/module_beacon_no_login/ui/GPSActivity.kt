@@ -40,7 +40,7 @@ class GPSActivity : BaseActivity() {
                     coordinatesBean?.lat = list[0]
                     coordinatesBean?.lon = list[1]
                     coordinatesBean?.hei = 0.0
-                ToastUtils.showShort(coordinatesBean?.hei.toString() + "米高度" + ",坐标为:" + coordinatesBean?.lat + "," + coordinatesBean?.lon)
+                ToastUtils.showShort(coordinatesBean?.hei.toString() + resources.getString(R.string.meter) + ", ${resources.getString(R.string.coordinate)}:" + coordinatesBean?.lon + "," + coordinatesBean?.lat)
                 tv_coordinate.text = "x：${coordinatesBean?.lat} y: ${coordinatesBean?.lon} z: ${coordinatesBean?.hei}"
                 bt_sure.isEnabled = true
             }catch (e : Exception) {}
