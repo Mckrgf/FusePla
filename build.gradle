@@ -57,7 +57,7 @@ ext{
     routerVersion       = '9.7.29.5'
 
     //9.7.29.5 BAP 5.0对应版本分支
-    mbapVersion          = '9.7.29.5release43'
+    mbapVersion          = '9.7.29.6'
 }
 
 task clean(type: Delete) {
